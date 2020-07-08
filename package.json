@@ -6,8 +6,8 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
-		"lint:js": "eslint 'src/js/**/*.js' --fix",
-		"lint:css": "stylelint --fix 'src/scss/**/*.scss'"
+    "lint:js": "eslint 'src/js/**/*.js' --fix",
+    "lint:css": "stylelint --fix 'src/scss/**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,9 @@
     "eslint": "^7.4.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5",
     "sass": "^1.26.10",
     "stylelint": "^13.6.1",
     "stylelint-config-standard": "^20.0.0"
