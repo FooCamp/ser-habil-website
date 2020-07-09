@@ -1,8 +1,8 @@
 {
-	"extends": "airbnb-base",
-	"parserOptions": {
-		"ecmaVersion": 6,
-		"sourceType": "module"
+  "extends": "airbnb-base",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
   },
   "plugins": ["prettier"],
   "rules": {
@@ -15,9 +15,9 @@
       }
     ]
   },
-	"env": {
-		"browser": true,
-		"node": true,
-		"es6": true
-	}
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  }
 }
