@@ -16,7 +16,7 @@ const components = {
 const getCurrentPage = () => {
   const path = window.location.href.split('/');
   const location = path.slice(-1)[0] || 'home';
-  return location.replace('.html', '');
+  return location.split('.html')[0];
 };
 
 /**
@@ -49,4 +49,13 @@ const pageInit = (data) => {
   }
 };
 
-pageInit(pageData[getCurrentPage()]);
+const getPageData = (page) => {
+  if (page === 'event') {
+    const params = new URLSearchParams(window.location.search);
+    const found = pageData.events.find(element => element.eventId === parseInt(params.get('eventId')));
+    return found || { sections: [{ message: 'event not found' }] };
+  }
+  return pageData[page];
+};
+
+pageInit(getPageData(getCurrentPage()));
