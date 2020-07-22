@@ -1,5 +1,3 @@
-import '../scss/main.scss';
-import '../about.html';
 // Component imports
 import { defaultComp } from './components/default';
 
