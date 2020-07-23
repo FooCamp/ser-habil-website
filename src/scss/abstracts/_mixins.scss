@@ -1,1 +1,6 @@
 /* Sass Mixins */
+@mixin viewport-desktop {
+    @media (min-width: 728px) {
+        @content;
+    }
+}
