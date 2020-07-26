@@ -1,11 +1,18 @@
 const pageData = {
   home: {
-    sections: [{name:'home root'}],
+    sections: [
+      {
+        component: 'test',
+        image: {
+          src: 'logo.png',
+          alt: 'logo',
+        },
+      },
+    ],
   },
   about: {
-    sections: [{name:'about root'}],
+    sections: [{ name: 'about root' }],
   },
 };
 
 export { pageData };
-export default 'pageData';
