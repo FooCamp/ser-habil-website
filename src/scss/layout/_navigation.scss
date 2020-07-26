@@ -1,0 +1,26 @@
+.navcomp {
+  display: flex;
+  height: 96px;
+  margin-bottom: 14px;
+}
+
+.navcomp-icon {
+  background-color: transparent;
+  border: transparent;
+  height: 20px;
+  margin: 45px  29px 31px 0;
+  position: absolute;
+  width: 20px;
+}
+
+.navcomp-image {
+  border: 2px black;
+  display: inline-block;
+  height: 48px;
+  margin: 31px  170px 17px 29px;
+  width: 120px;
+}
+
+.topnav {
+  display: none;
+}

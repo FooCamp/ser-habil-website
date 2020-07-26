@@ -9,12 +9,12 @@ const navigationComponent = (data) => {
   const navigation = document.createElement('SECTION');
   const overlayLinks = renderLinks(data.navLinks) 
   let navigationContent = `
-  <header>
+  <header class="navcomp">
   <div>
-  <a href="${data.logoUrl}">
+  <a class="navcomp-image" href="${data.logoUrl}">
   <img src="${data.image.src}" alt="${data.image.alt}">
   </a>
-  <button>
+  <button class="navcomp-icon">
   <img src="menu.png" alt="menu">
   </button>
   </div>
