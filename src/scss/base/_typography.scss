@@ -1,3 +1,4 @@
 /* Typography rules */
-@include font('HKGrotesk', '../static/fonts/hkgrotesk_regular');
-@include font('HKGrotesk-Bold', '../static/fonts/hkgrotesk_bold');
+.headline {
+  font-family: $hkgrotesk-bold;
+}
