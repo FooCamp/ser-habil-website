@@ -1,6 +1,5 @@
 // Component imports
 import { defaultComp } from './components/default';
-import { test } from './components/test';
 
 import { pageData } from '../data/data';
 
@@ -10,7 +9,6 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
-  test,
 };
 
 const getCurrentPage = () => {
