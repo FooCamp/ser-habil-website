@@ -1,18 +1,30 @@
-// import images from '../../static/assets/*.png';
+const renderLinks = (links) => {
+  let linksMarkup = '';
+  links.forEach(link => {
+    linksMarkup += `<li><a href="${link.url}">${link.text}</a></li>\n` 
+  });
+  return linksMarkup;
+}
 
 const navigationComponent = (data) => {
-
   const navigation = document.createElement('SECTION');
-  const image = import(`../../static/assets/${data.image}`)
+  const overlayLinks = renderLinks(data.navLinks) 
   let navigationContent = `
   <header>
-  <img src="${image}" alt="ser habil logo" href="#">
-  <nav class:"topnav" src="" alt="Menu icon">
-    <ul id="myLinks" >
-      <li><a href="#inicio"></a>inicio</li>
-      <li><a href="#eventos"></a>eventos</li>
-      <li><a href="#fundacion"></a>fundacion</li>
-      <li><a href="#contacto"></a>contacto</li>
+  <div>
+  <a href="${data.logoUrl}">
+  <img src="${data.image.src}" alt="${data.image.alt}">
+  </a>
+  <button>
+  <img src="menu.png" alt="menu">
+  </button>
+  </div>
+  <nav class="topnav">
+  <button>
+  <img src="close.png" alt="close">
+  </button>
+    <ul class="myLinks">
+    ${overlayLinks}
     </ul>
   </nav>
     </header>

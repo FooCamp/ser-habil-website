@@ -2,6 +2,34 @@ const pageData = {
   home: {
     sections: [
       {
+        component: 'navigation',
+        image: {
+          src: 'logo.png',
+          alt: 'Logo Ser habil',
+        },
+        logoUrl: 'www.google.com',
+        navLinks: [
+          {
+            text: 'inicio',
+            url: 'www.google.com'
+          },
+          {
+            text: 'eventos',
+            url: 'www.google.com'
+          },
+          {
+            text: 'fundacion',
+            url: 'www.google.com'
+          },
+          {
+            text: 'contacto',
+            url: 'www.google.com'
+          },
+        ]
+
+
+      },
+      {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
         text:
