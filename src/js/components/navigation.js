@@ -5,7 +5,6 @@ const renderLinks = (links) => {
   });
   return linksMarkup;
 }
-
 const navigationComponent = (data) => {
   const navigation = document.createElement('SECTION');
   const overlayLinks = renderLinks(data.navLinks) 

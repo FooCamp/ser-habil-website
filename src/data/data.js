@@ -11,23 +11,21 @@ const pageData = {
         navLinks: [
           {
             text: 'inicio',
-            url: 'www.google.com'
+            url: 'www.google.com',
           },
           {
             text: 'eventos',
-            url: 'www.google.com'
+            url: 'www.google.com',
           },
           {
             text: 'fundacion',
-            url: 'www.google.com'
+            url: 'www.google.com',
           },
           {
             text: 'contacto',
-            url: 'www.google.com'
+            url: 'www.google.com',
           },
-        ]
-
-
+        ],
       },
       {
         component: 'hero',
@@ -253,7 +251,6 @@ const pageData = {
       },
     ],
   },
-
 };
 
 export { pageData };
