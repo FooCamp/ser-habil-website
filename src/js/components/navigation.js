@@ -1,10 +1,12 @@
+import images from '../../static/assets/*.png';
+
 const navigationComponent = (data) => {
 
   const navigation = document.createElement('SECTION');
   const image = import(`../../static/assets/${data.image}`)
   let navigationContent = `
     <header>
-  <img src="${image}" alt="ser habil logo" href="#">
+  <img src="${images['logo']}" alt="ser habil logo" href="#">
   <nav>
     <ul id="myLinks" >
       <li><a href="#inicio"></a>inicio</li>
@@ -16,7 +18,7 @@ const navigationComponent = (data) => {
     </header>
   `
   navigation.innerHTML = navigationContent
-
+  console.log(images)
   return navigation;
 }
 
