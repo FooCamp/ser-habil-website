@@ -10,7 +10,7 @@
     "lint:css": "stylelint --fix 'src/scss/**/*.scss'"
   },
   "staticFiles": {
-    "staticPath": "src/static/images",
+    "staticPath": "src/static/assets",
     "watcherGlob": "**"
   },
   "repository": {
