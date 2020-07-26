@@ -1,0 +1,5 @@
+.grid-mobile {
+    grid-template-columns: repeat(8, 1fr);
+    max-width: 375px;
+    grid-gap: 20px;
+}
