@@ -1,7 +1,6 @@
 // Component imports
-import { defaultComp } from './components/default';
-
-import { pageData } from '../data/data';
+import { defaultComp } from './components/default.js';
+import { pageData } from '../data/data.js';
 
 /**
  * Component map
