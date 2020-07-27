@@ -1,8 +1,8 @@
 /* Sass Mixins */
 @mixin viewport-desktop {
-    @media (min-width: 728px) {
-        @content;
-    }
+  @media (min-width: 728px) {
+    @content;
+  }
 }
 @mixin font($font-family, $font-file) {
   @font-face {
