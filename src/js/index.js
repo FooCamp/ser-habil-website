@@ -3,12 +3,15 @@ import { defaultComp } from './components/default';
 
 import { pageData } from '../data/data';
 
+import { footerComp } from './components/footer';
+
 /**
  * Component map
  * each component name is mapped to its template.
  */
 const components = {
   default: defaultComp,
+  footer: footerComp,
 };
 
 const getCurrentPage = () => {
