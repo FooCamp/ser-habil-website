@@ -78,6 +78,47 @@ const pageData = {
           },
         ],
       },
+      {
+        component: 'footer',
+        logo: {
+          link: 'www.google.com',
+          image: {
+            src: 'footer-logo.png',
+            alt: 'SER HABIL',
+          },
+        },
+        items: [
+          {
+            text: 'Eventos',
+            href: 'eventos',
+          },
+          {
+            text: 'Fundacion',
+            href: 'fundacion',
+          },
+          {
+            text: 'Contacto',
+            href: 'contacto',
+          },
+        ],
+        socialText: 'Encuentranos en nuestras redes sociales',
+        socialLinks: [
+          {
+            href: 'instagram.com',
+            icon: {
+              src: 'instagram-icon.png',
+              alt: 'instagram'
+            }
+          },
+          {
+            href: 'facebook.com',
+            icon: {
+              src: 'facebook-icon.png',
+              alt: 'facebook'
+            },
+          },
+        ],
+      },
     ],
   },
   contact: {
