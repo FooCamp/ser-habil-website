@@ -7,25 +7,47 @@ const pageData = {
           src: 'logo.png',
           alt: 'Logo Ser habil',
         },
-        logoUrl: 'www.google.com',
+        logoUrl: 'https://www.google.com',
         navLinks: [
           {
             text: 'inicio',
-            url: 'www.google.com',
+            url: 'https://www.google.com',
           },
           {
             text: 'eventos',
-            url: 'www.google.com',
+            url: 'https://www.google.com',
           },
           {
             text: 'fundacion',
-            url: 'www.google.com',
+            url: 'https://www.google.comm',
           },
           {
             text: 'contacto',
-            url: 'www.google.com',
+            url: 'https://www.google.comm',
           },
         ],
+        socialMedia: {
+          text: 'Encuentranos en nuestras redes sociales:',
+          socialLinks:[
+            {
+              image: {
+                src: 'facebook-icon.png',
+                alt: 'Facebook'
+              },
+              url:'https://www.facebook.com'
+            },
+            {
+              image: {
+                src: 'instagram-icon.png',
+                alt: 'instagram'
+              },
+              url:'https://www.instagram.com'
+            }
+
+          
+          ]
+        },
+        
       },
       {
         component: 'hero',
