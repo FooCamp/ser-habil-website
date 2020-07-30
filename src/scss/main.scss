@@ -6,6 +6,10 @@
 @import 'abstracts/typography';
 @import 'abstracts/variables';
 
+
 // 2. Base stuff
 @import 'base/reset';
 @import 'base/typography';
+
+// 3. Components
+@import 'components/scroll-indicator';

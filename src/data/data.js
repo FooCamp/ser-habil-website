@@ -24,6 +24,7 @@ const pageData = {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
+        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {
@@ -112,6 +113,7 @@ const pageData = {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
+        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {
@@ -146,6 +148,7 @@ const pageData = {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
+        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {

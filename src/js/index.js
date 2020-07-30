@@ -1,7 +1,6 @@
 // Component imports
 import { defaultComp } from './components/default';
-import { scrollIndicator} from './components/scroll-indicator';
-
+import { scrollIndicator } from './components/scroll-indicator';
 import { pageData } from '../data/data';
 
 /**
