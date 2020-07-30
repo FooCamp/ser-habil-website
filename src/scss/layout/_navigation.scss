@@ -16,6 +16,11 @@
     width: 20px;
   }
 
+  &__icon--close{
+    margin: 43px 0 86px;
+    place-self: flex-end;
+  }
+
   &__image {
     border: 2px black;
     display: inline-block;
@@ -24,12 +29,12 @@
   }
 
   &__overlay {
-    align-items: center;
-    background-color: rgba(0,0,0, 0.9);
+    background-color: rgba(0,0,0);
     display: flex;
     flex-direction: column;
     height: 100vh;
     left: 0;
+    padding: 0 29px 0 69px;
     position: absolute;
     top: 0;
     transition: transform 1s ease-out;
@@ -41,10 +46,27 @@
     transform: translateY(0);
   }
 
-  &__overlay-links{
-    color: $white;
+  &__overlay-list{
+    color: white;
     font-family: $hkgrotesk-bold;
     font-size: 30px;
-    line-height: 30px;
+    line-height: 56px;
+    text-transform: capitalize;
   }
+
+  &__overlay-text{
+    font-family: $hkgrotesk-regular;
+    font-size: 18px;
+    color: gray;
+    margin: 72px 0 25px;
+  }
+
+  &__overlay-social{
+    width: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+  }
+
 }

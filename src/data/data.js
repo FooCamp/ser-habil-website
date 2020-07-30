@@ -18,7 +18,7 @@ const pageData = {
             url: 'https://www.google.com',
           },
           {
-            text: 'fundacion',
+            text: 'fundación',
             url: 'https://www.google.comm',
           },
           {
@@ -27,7 +27,7 @@ const pageData = {
           },
         ],
         socialMedia: {
-          text: 'Encuentranos en nuestras redes sociales:',
+          text: 'Encuéntranos en nuestras redes sociales:',
           socialLinks:[
             {
               image: {
