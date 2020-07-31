@@ -2,7 +2,7 @@ import {newContainer} from './helpers'
 
 const renderLinks = (links, type) => {
   const linkNodes = links.map(link => {
-    const menuLink = newContainer('a');
+    const menuLink = newContainer('a',[],['nav__overlay-link']);
     menuLink.href = link.url;
 
     if (type === 'image'){
