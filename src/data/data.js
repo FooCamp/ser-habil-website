@@ -19,11 +19,11 @@ const pageData = {
           },
           {
             text: 'fundación',
-            url: 'https://www.google.comm',
+            url: 'https://www.google.com',
           },
           {
             text: 'contacto',
-            url: 'https://www.google.comm',
+            url: 'https://www.google.com',
           },
         ],
         socialMedia: {
