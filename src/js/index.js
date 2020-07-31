@@ -1,6 +1,7 @@
 // Component imports
 import { defaultComp } from './components/default';
 import { scrollIndicator } from './components/scroll-indicator';
+import { slider } from './components/slider';
 import { pageData } from '../data/data';
 
 /**
@@ -10,6 +11,7 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   'scroll-indicator': scrollIndicator,
+  'programs' : slider,
 };
 
 const getCurrentPage = () => {
