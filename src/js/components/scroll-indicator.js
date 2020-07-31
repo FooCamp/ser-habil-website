@@ -10,7 +10,7 @@ const scrollIndicator = (data) => {
   const text = newText('p', data.text, ['scroll__text']);
   button.classList.add('scroll__button');
   image.classList.add('scroll__image');
-  const section = newContainer('section', [button, text], ['scroll-indicator']);
+  const section = newContainer('section', [button, text], ['scroll']);
   button.addEventListener('click', () => {
     const scrollAnimation = document.getElementById(data.scrollTo);
     const positions = scrollAnimation.getBoundingClientRect();

@@ -1,26 +1,32 @@
-.scroll-indicator {
+.scroll {
   background-color: $white;
   display: block;
   padding: 20px;
-}
-.scroll__button {
-  display: flex;
-  align-self: center;
-  width: 40px;
-  height: 40px;
-  margin:auto ;
-  border: none;
-}
-.scroll__button:focus { outline: none; }
-.scroll__text {
-  display: none;
-}
-@include viewport-desktop() {
-  .scroll__text {
-    display: block;
-    text-align: center;
+
+  &__button {
+    align-self: center;
+    border: none;
+    display: flex;
+    height: 40px;
+    margin:auto;
+    width: 40px;
+  }
+
+  &__button:focus {
+    outline: none;
+    }
+
+  &__text {
+    display: none;
+  }
+  @include viewport-desktop() {
+    &__text {
+      display: block;
+      text-align: center;
+    }
+  }
+  &__image {
+    background-color: $white;
   }
 }
-.scroll__image {
-  background-color: $white;
-}
+
