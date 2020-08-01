@@ -81,7 +81,7 @@ const pageData = {
       {
         component: 'footer',
         logo: {
-          link: 'www.google.com',
+          href: 'http://www.google.com',
           image: {
             src: 'footer-logo.png',
             alt: 'SER HABIL',
@@ -90,32 +90,32 @@ const pageData = {
         items: [
           {
             text: 'Eventos',
-            href: 'eventos',
+            href: 'http://www.google.com',
           },
           {
             text: 'Fundacion',
-            href: 'fundacion',
+            href: 'http://www.google.com',
           },
           {
             text: 'Contacto',
-            href: 'contacto',
+            href: 'http://www.google.com',
           },
         ],
-        socialText: 'Encuentranos en nuestras redes sociales',
+        socialText: 'Encuentrános en nuestras redes sociales:',
         socialLinks: [
           {
-            href: 'instagram.com',
-            icon: {
-              src: 'instagram-icon.png',
-              alt: 'instagram'
-            }
-          },
-          {
-            href: 'facebook.com',
+            href: 'https://www.facebook.com',
             icon: {
               src: 'facebook-icon.png',
               alt: 'facebook'
             },
+          },
+          {
+            href: 'https://www.instagram.com',
+            icon: {
+              src: 'instagram-icon.png',
+              alt: 'instagram'
+            }
           },
         ],
       },

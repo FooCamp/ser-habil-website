@@ -62,10 +62,11 @@ const newText = (type, content, classes = []) => {
  *
  * retorna un nodo de multimedia con su imagen o video y clases asignadas
  */
-const newMultimedia = (type, src, classes = []) => {
+const newMultimedia = (type, src, alt, classes = []) => {
   const oneElement = createTagWithClasses(type);
   const container = newContainer('div', [oneElement], classes);
   oneElement.src = src;
+  oneElement.alt = alt;
   return container;
 };
 

@@ -1,0 +1,48 @@
+.footer {
+  background: #000;
+  padding: 59px 91px 64px 30px;
+
+&__logo {
+  width: 117px;
+  height: 48px;
+  margin-bottom: 40px;
+
+}
+
+&__items {
+  margin-bottom: 40px;
+
+  &-list:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
+
+&__data-links {
+  color:#fff;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+&__social-text {
+  color: #6c6c6c;
+  margin-bottom: 32px;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+
+&__icons  {
+  width: 30px;
+  height: 30px;
+
+  &-links{
+    display: inline-block;
+    &:not(:last-of-type) {
+      margin-right: 40px;
+    }
+  }
+
+}
+
+
+}
