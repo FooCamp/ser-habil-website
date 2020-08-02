@@ -93,7 +93,7 @@ const pageData = {
             href: 'http://www.google.com',
           },
           {
-            text: 'Fundacion',
+            text: 'Fundación',
             href: 'http://www.google.com',
           },
           {
