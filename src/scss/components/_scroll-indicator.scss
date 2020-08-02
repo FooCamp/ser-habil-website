@@ -19,12 +19,14 @@
   &__text {
     display: none;
   }
+
   @include viewport-desktop() {
     &__text {
       display: block;
       text-align: center;
     }
   }
+
   &__image {
     background-color: $white;
   }
