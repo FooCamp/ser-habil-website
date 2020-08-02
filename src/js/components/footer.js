@@ -1,7 +1,7 @@
 import { newText, newMultimedia, newLink, newContainer } from './helpers';
 
-const createLinks = (dataLinks) =>{
-  const arrayLinks = dataLinks.map((link)=>{
+const createLinks = (dataLinks) => {
+  const arrayLinks = dataLinks.map((link) => {
     const linksItems = newLink(link.href, link.text, ['footer__data-links']);
     const listLink = newContainer('li', [linksItems], ['footer__items-list']);
     return listLink;
@@ -10,7 +10,7 @@ const createLinks = (dataLinks) =>{
 }
 
 const createIcons = (dataIcons) => {
-  const arrayIcons = dataIcons.map((icons)=>{
+  const arrayIcons = dataIcons.map((icons) => {
     const iconsImages = newMultimedia('img', icons.icon.src, icons.icon.alt, ['footer__icons']);
     const iconsLinks = newLink(icons.href, '', ['footer__icons-links']);
     iconsLinks.target = '_blank';
