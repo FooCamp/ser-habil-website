@@ -1,9 +1,8 @@
 // Component imports
 import { defaultComp } from './components/default';
-
-import { pageData } from '../data/data';
-
+import { navigationComponent } from './components/navigation';
 import { footerComp } from './components/footer';
+import { pageData } from '../data/data';
 
 /**
  * Component map
@@ -12,6 +11,7 @@ import { footerComp } from './components/footer';
 const components = {
   default: defaultComp,
   footer: footerComp,
+  navigation: navigationComponent,
 };
 
 const getCurrentPage = () => {

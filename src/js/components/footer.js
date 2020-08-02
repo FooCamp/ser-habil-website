@@ -11,7 +11,7 @@ const createLinks = (dataLinks) => {
 
 const createIcons = (dataIcons) => {
   const arrayIcons = dataIcons.map((icons) => {
-    const iconsImages = newMultimedia('img', icons.icon.src, icons.icon.alt, ['footer__icons']);
+    const iconsImages = newMultimedia('img', icons.icon, ['footer__icons']);
     const iconsLinks = newLink(icons.href, '', ['footer__icons-links']);
     iconsLinks.target = '_blank';
     iconsLinks.appendChild(iconsImages);
@@ -23,7 +23,7 @@ const createIcons = (dataIcons) => {
 
 const footerComp = (data) => {
 
-  const logoFooter = newMultimedia('img', data.logo.image.src, data.logo.image.alt, ['footer__logo']);
+  const logoFooter = newMultimedia('img', data.logo.image, ['footer__logo']);
   const linkLogo = newLink(data.logo.href, '', ['footer__link-logo']);
   const listLink = createLinks(data.items);
   const items = newContainer('ul', listLink, ['footer__items']);

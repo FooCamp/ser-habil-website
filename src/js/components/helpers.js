@@ -56,17 +56,20 @@ const newText = (type, content, classes = []) => {
 
 /**
  * @param {string} type es el tipo de etiqueta que se va a crear
- * @param {string} src es la direccion de la multimedia que queremos mostrar
+ * @param {object} imgData
+ * @param {string} imgData.src es el src de la imagen
+ * @param {string} imgData.alt es el alt de la imagen
  * @param {array[string]} classes es un array de string de todas las clases
  *  que se quieren insertar(este parametro es opcional)
  *
  * retorna un nodo de multimedia con su imagen o video y clases asignadas
  */
-const newMultimedia = (type, src, alt, classes = []) => {
+const newMultimedia = (type, { src, alt }, classes = []) => {
   const oneElement = createTagWithClasses(type);
   const container = newContainer('div', [oneElement], classes);
-  oneElement.src = src;
-  oneElement.alt = alt;
+  oneElement.src = src || '';
+  oneElement.alt = alt || '';
+
   return container;
 };
 

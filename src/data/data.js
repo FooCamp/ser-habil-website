@@ -2,6 +2,54 @@ const pageData = {
   home: {
     sections: [
       {
+        component: 'navigation',
+        image: {
+          src: 'logo.png',
+          alt: 'Logo Ser habil',
+        },
+        logoUrl: 'https://www.google.com',
+        navLinks: [
+          {
+            text: 'inicio',
+            url: 'https://www.google.com',
+          },
+          {
+            text: 'eventos',
+            url: 'https://www.google.com',
+          },
+          {
+            text: 'fundación',
+            url: 'https://www.google.com',
+          },
+          {
+            text: 'contacto',
+            url: 'https://www.google.com',
+          },
+        ],
+        socialMedia: {
+          text: 'Encuéntranos en nuestras redes sociales:',
+          socialLinks:[
+            {
+              image: {
+                src: 'facebook-icon.png',
+                alt: 'Facebook'
+              },
+              url:'https://www.facebook.com'
+            },
+            {
+              image: {
+                src: 'instagram-icon.png',
+                alt: 'instagram'
+              },
+              url:'https://www.instagram.com'
+            }
+
+          
+          ]
+        },
+        
+      },
+      {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
         text:
