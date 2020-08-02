@@ -18,6 +18,8 @@
 
   &__text {
     display: none;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-card-titles;
   }
 
   @include viewport-desktop() {
