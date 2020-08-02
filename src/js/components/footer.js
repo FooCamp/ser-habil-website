@@ -13,6 +13,7 @@ const createIcons = (dataIcons) => {
   const arrayIcons = dataIcons.map((icons)=>{
     const iconsImages = newMultimedia('IMG',icons.icon.src,icons.icon.alt,['footer__icons']);
     const iconsLinks = newLink(icons.href,'',['footer__icons-links']);
+    iconsLinks.target = '_blank';
     iconsLinks.appendChild(iconsImages);
     return iconsLinks
   });
