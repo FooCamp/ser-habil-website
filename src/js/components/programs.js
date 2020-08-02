@@ -1,6 +1,14 @@
+/* eslint-disable no-param-reassign */
 /* eslint-disable import/prefer-default-export */
 import { newText, newMultimedia, newContainer } from './helpers';
 
+/**
+ * @param {array[nodesHTMl]} cardsContainer es el array de nodosHTML que contiene el
+ *  ul los li y las cards
+ * crea unos divs invisibles que serviran para mover las cards del slider dando clic
+ * agrega la funcionalidad para que al darle clic a los divs invisibles de scroll tanto
+ *  a derecha como a izquierda
+ */
 const createControls = (cardsContainer) => {
   const controlLeft = newContainer('div', [], ['slider__control', 'slider__control--left']);
   const controlRight = newContainer('div', [], ['slider__control', 'slider__control--right']);
@@ -35,6 +43,7 @@ const createCards = (cardList) => {
   });
   return cardNodes;
 };
+
 /**
  * @param {object} data es el objeto que forma la estructura de la pagina
  * retorna un nodo html con todos los componentes para realizar dicho componente
