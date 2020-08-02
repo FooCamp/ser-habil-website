@@ -1,0 +1,108 @@
+.slider {
+  align-items: center;
+  background-image: url(../static/assets/forma1.jpg);
+  background-position: right;
+  background-position-y: 155px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 200px;
+  };
+
+  &__text {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    height: 64px;
+    text-align: center;
+    width: 270px;
+  };
+
+  &__container {
+    position: relative;
+    width: 100%;
+
+  }
+
+
+
+  &-cards__container {
+    display: flex;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 40px;
+    width: 375px;
+
+  };
+
+  &-card:first-of-type {
+    margin-left: 0;
+    padding-left: 50px;
+  }
+
+  &-card:last-of-type {
+    margin-right: 0;
+    padding-right: 50px;
+  }
+
+  &-card__img {
+    height: 334px;
+    width: 246px;
+  };
+
+
+  &-card__text {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-card-titles;
+    margin-top: 20px;
+    width: 200px;
+  };
+
+  &__control {
+    cursor: pointer;
+    height: 334px;
+    margin-top: 40px;
+    position: absolute;
+    top: 0;
+    width: 50px;
+
+
+  }
+
+  &__control--right {
+    right: 0;
+  }
+
+  &__control--left {
+    left: 0;
+  }
+
+  @supports (scroll-snap-align: start) {
+    /* modern scroll snap points */
+    &-cards__container {
+      scroll-snap-type: x mandatory;
+    }
+
+    &-card {
+      scroll-snap-align: center;
+    }
+  }
+};
+
+

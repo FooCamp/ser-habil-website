@@ -25,14 +25,24 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
-            alt: 'playground',
+            src: 'medioAcuatico.jpg',
+            alt: 'medio acuático',
             text: 'Medio acuático y estimulación terapéutica',
           },
           {
-            src: '',
-            alt: 'kids',
-            text: '',
+            src: 'iniciacion.jpg',
+            alt: 'iniciación al deporte',
+            text: 'Iniciación y formación deportiva',
+          },
+          {
+            src: 'estiramiento.jpg',
+            alt: 'entrenamiento deportivo',
+            text: 'Entrenamiento deportivo y actividad física',
+          },
+          {
+            src: 'padres.jpg',
+            alt: 'padres y madres',
+            text: 'Grupo de padres y madres',
           },
         ],
       },
@@ -227,4 +237,5 @@ const pageData = {
   },
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { pageData };

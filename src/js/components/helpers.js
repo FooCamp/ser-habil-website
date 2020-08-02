@@ -1,9 +1,10 @@
+/* eslint-disable object-curly-newline */
 // helpers
 
 /**
  * @param {htmlNode} element es el nodo html al cual vamos a crear las clases
  * @param {array[string]} classes es un array de string de todas las clases que se quieren insertar
- * retorna un nodo html con clases asignadas
+ * retorna un nodo html ya creado con clases asignadas
  */
 const assingClasses = (element, classes = []) => {
   classes.forEach((className) => {
@@ -16,7 +17,7 @@ const assingClasses = (element, classes = []) => {
  * @param {string} tag es el tipo de etiqueta que se va a crear
  * @param {array[string]} classes es un array de string de todas las clases que se quieren insertar
  *
- * retorna un nodo html con clases asignadas
+ * retorna un nodo html creado con clases asignadas
  */
 const createTagWithClasses = (tag, classes) => {
   let element = document.createElement(tag);
@@ -62,10 +63,11 @@ const newText = (type, content, classes = []) => {
  *
  * retorna un nodo de multimedia con su imagen o video y clases asignadas
  */
-const newMultimedia = (type, src, classes = []) => {
+const newMultimedia = (type, src, alt, classes = []) => {
   const oneElement = createTagWithClasses(type);
   const container = newContainer('div', [oneElement], classes);
   oneElement.src = src;
+  oneElement.alt = alt;
   return container;
 };
 

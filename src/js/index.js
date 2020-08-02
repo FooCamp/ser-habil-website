@@ -1,6 +1,6 @@
 // Component imports
 import { defaultComp } from './components/default';
-
+import { programsComp } from './components/programs';
 import { pageData } from '../data/data';
 
 /**
@@ -9,10 +9,12 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  programs: programsComp,
 };
 
 const getCurrentPage = () => {
-  const path = window.location.href.split('/');
+  const clean = window.location.href.split('#');
+  const path = clean[0].split('/');
   const location = path.slice(-1)[0] || 'home';
   return location.replace('.html', '');
 };
