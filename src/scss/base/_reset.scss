@@ -7,11 +7,18 @@
   text-decoration: none;
 }
 
+html {
+  font-family: HKGrotesk, arial, sans-serif;
+}
+
 img,
 video {
   width: 100%;
 }
 
-html {
-  font-family: HKGrotesk, arial, sans-serif;
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
+
