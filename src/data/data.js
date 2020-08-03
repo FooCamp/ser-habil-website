@@ -2,79 +2,88 @@ const pageData = {
   home: {
     sections: [
       {
-        component: "hero",
-        title: "¡Hola! Esto es Ser Hábil",
+        component: 'hero',
+        title: '¡Hola! Esto es Ser Hábil',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: "",
-            alt: "playground",
+            src: '',
+            alt: 'playground',
           },
           {
-            src: "",
-            alt: "kids",
+            src: '',
+            alt: 'kids',
           },
         ],
-        backgroundImg: "",
+        backgroundImg: '',
       },
       {
-        component: "programs",
-        title: "Nuestros programas",
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
+        component: 'programs',
+        title: 'Nuestros programas',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: "",
-            alt: "playground",
-            text: "Medio acuático y estimulación terapéutica",
+            src: '',
+            alt: 'playground',
+            text: 'Medio acuático y estimulación terapéutica',
           },
           {
-            src: "",
-            alt: "kids",
-            text: "",
+            src: '',
+            alt: 'kids',
+            text: '',
           },
         ],
       },
       {
-        component: "scenarios",
-        title: "Escenarios que utilizamos",
-        heading: "Piscina de actividades Sub-acuáticas",
-        text: "CDPD",
+        component: 'scenarios',
+        title: 'Escenarios que utilizamos',
+        heading: 'Piscina de actividades Sub-acuáticas',
+        text: 'CDPD',
         images: [
           {
-            src: "",
-            alt: "Piscina",
+            src: '',
+            alt: 'Piscina',
           },
           {
-            src: "",
-            alt: "Piscina Escuela",
+            src: '',
+            alt: 'Piscina Escuela',
           },
           {
-            src: "",
-            alt: "Basketball",
+            src: '',
+            alt: 'Basketball',
           },
         ],
       },
       {
-        component: "events",
-        title: "Evento Destacado",
+        component: 'events',
+        title: 'Evento Destacado',
         images: [
           {
-            src: "",
-            alt: "Piscina",
-            component: "Catalina López",
-            title: "Campeona nacional de natación",
+            src: '',
+            alt: 'Piscina',
+            component: 'Catalina López',
+            title: 'Campeona nacional de natación',
             text:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
           },
           {
-            src: "",
-            alt: "Piscina",
-            component: "Catalina López",
-            title: "Campeona nacional de natación",
+            src: '',
+            alt: 'Piscina',
+            component: 'Catalina López',
+            title: 'Campeona nacional de natación',
             text:
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
           },
         ],
       },
@@ -83,67 +92,85 @@ const pageData = {
   contact: {
     sections: [
       {
-        component: "contactHero",
-        title: "Unete a nosotros",
+        component: 'contactHero',
+        title: 'Unete a nosotros',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: "",
-            alt: "girl",
+            src: '',
+            alt: 'girl',
           },
           {
-            src: "",
-            alt: "cellphome",
+            src: '',
+            alt: 'cellphome',
           },
         ],
       },
       {
-        component: "contactUs",
-        title: "Ponte en contacto con nosotros",
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
+        name: 'contactUs',
+        title: 'Ponte en contacto con nosotros',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        address: "Carrera 52 No. 67A-15, Torre C, Piso 7, Ruta N",
-        city: "Medellin",
-        country: "Colombia",
-        telephones: ["+57 123 456 7890", "+57 123 456 7890"],
-        emails: ["hola@serhabil.com", "hola@serhabil.com"],
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        address: 'Carrera 52 No. 67A-15, Torre C, Piso 7, Ruta N',
+        city: 'Medellin',
+        country: 'Colombia',
+        telephones: ['+57 123 456 7890', '+57 123 456 7890'],
+        emails: ['hola@serhabil.com', 'hola@serhabil.com'],
       },
     ],
   },
   events: {
     sections: [
       {
-        component: "event",
-        title: "Dia de campo",
-        image: "",
+        component: 'event',
+        title: 'Dia de campo',
+        image: '',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        date: "Febrero, 12, 2020",
-        hour: "3:30 p.m.",
-        place: "Fundación Ser Hábil, sala 3",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        date: 'Febrero, 12, 2020',
+        hour: '3:30 p.m.',
+        place: 'Fundación Ser Hábil, sala 3',
         outstandingFlag: true,
       },
       {
-        component: "event",
-        title: "Curso de pintura con acuarelas",
-        image: "",
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
+        name: 'event',
+        title: 'Curso de pintura con acuarelas',
+        image: '',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        date: "Febrero, 12, 2020",
-        hour: "3:30 p.m.",
-        place: "Fundación Ser Hábil, sala 3",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        date: 'Febrero, 12, 2020',
+        hour: '3:30 p.m.',
+        place: 'Fundación Ser Hábil, sala 3',
         outstandingFlag: false,
       },
       {
-        component: "event",
-        title: "Curso de pintura con acuarelas",
-        image: "",
+        component: 'event',
+        title: 'Curso de pintura con acuarelas',
+        image: '',
         text:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
-        date: "Febrero, 12, 2020",
-        hour: "3:30 p.m.",
-        place: "Fundación Ser Hábil, sala 3",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        date: 'Febrero, 12, 2020',
+        hour: '3:30 p.m.',
+        place: 'Fundación Ser Hábil, sala 3',
         outstandingFlag: false,
       },
     ],
@@ -151,65 +178,65 @@ const pageData = {
   foundation: {
     sections: [
       {
-        component: "fundacion",
+        component: 'fundacion',
         hero: {
-          image1: "",
-          image2: "",
-          title: "Acerca de la fundación",
+          image1: '',
+          image2: '',
+          title: 'Acerca de la fundación',
         },
         text1:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         text2:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
         text3:
-          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
-        bottomImage: "",
+          'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+        bottomImage: '',
       },
     ],
   },
   common: {
     initalSections: [
       {
-        component: "navigation",
+        component: 'navigation',
         image: {
-          src: "logo.png",
-          alt: "Logo Ser habil",
+          src: 'logo.png',
+          alt: 'Logo Ser habil',
         },
-        logoUrl: "https://www.google.com",
+        logoUrl: 'https://www.google.com',
         navLinks: [
           {
-            text: "inicio",
-            url: "https://www.google.com",
+            text: 'inicio',
+            url: 'https://www.google.com',
           },
           {
-            text: "eventos",
-            url: "https://www.google.com",
+            text: 'eventos',
+            url: 'https://www.google.com',
           },
           {
-            text: "fundación",
-            url: "https://www.google.com",
+            text: 'fundación',
+            url: 'https://www.google.com',
           },
           {
-            text: "contacto",
-            url: "https://www.google.com",
+            text: 'contacto',
+            url: 'https://www.google.com',
           },
         ],
         socialMedia: {
-          text: "Encuéntranos en nuestras redes sociales:",
+          text: 'Encuéntranos en nuestras redes sociales:',
           socialLinks: [
             {
               image: {
-                src: "facebook-icon.png",
-                alt: "Facebook",
+                src: 'facebook-icon.png',
+                alt: 'Facebook',
               },
-              url: "https://www.facebook.com",
+              url: 'https://www.facebook.com',
             },
             {
               image: {
-                src: "instagram-icon.png",
-                alt: "instagram",
+                src: 'instagram-icon.png',
+                alt: 'instagram',
               },
-              url: "https://www.instagram.com",
+              url: 'https://www.instagram.com',
             },
           ],
         },
@@ -217,42 +244,42 @@ const pageData = {
     ],
     finalSections: [
       {
-        component: "footer",
+        component: 'footer',
         logo: {
-          href: "http://www.google.com",
+          href: 'http://www.google.com',
           image: {
-            src: "footer-logo.png",
-            alt: "SER HABIL",
+            src: 'footer-logo.png',
+            alt: 'SER HABIL',
           },
         },
         items: [
           {
-            text: "Eventos",
-            href: "http://www.google.com",
+            text: 'Eventos',
+            href: 'http://www.google.com',
           },
           {
-            text: "Fundación",
-            href: "http://www.google.com",
+            text: 'Fundación',
+            href: 'http://www.google.com',
           },
           {
-            text: "Contacto",
-            href: "http://www.google.com",
+            text: 'Contacto',
+            href: 'http://www.google.com',
           },
         ],
-        socialText: "Encuentrános en nuestras redes sociales:",
+        socialText: 'Encuentrános en nuestras redes sociales:',
         socialLinks: [
           {
-            href: "https://www.facebook.com",
+            href: 'https://www.facebook.com',
             icon: {
-              src: "facebook-icon.png",
-              alt: "facebook",
+              src: 'facebook-icon.png',
+              alt: 'facebook',
             },
           },
           {
-            href: "https://www.instagram.com",
+            href: 'https://www.instagram.com',
             icon: {
-              src: "instagram-icon.png",
-              alt: "instagram",
+              src: 'instagram-icon.png',
+              alt: 'instagram',
             },
           },
         ],

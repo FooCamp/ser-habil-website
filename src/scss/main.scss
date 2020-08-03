@@ -10,6 +10,9 @@
 @import 'base/reset';
 @import 'base/typography';
 
-// 3. layout
+// 3.layout
 @import 'layout/navigation';
 
+//4 . Components
+@import 'components/scroll-indicator';
+@import 'layout/footer';
