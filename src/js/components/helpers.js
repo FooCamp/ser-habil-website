@@ -1,5 +1,3 @@
-// helpers
-
 /**
  * @param {htmlNode} element es el nodo html al cual vamos a crear las clases
  * @param {array[string]} classes es un array de string de todas las clases que se quieren insertar
@@ -55,6 +53,21 @@ const newText = (type, content, classes = []) => {
 };
 
 /**
+ * @param {string} href es la direccion a la que queremos que lleve el link
+ * @param {string} text el texto que queremos que se vea en el link
+ * @param {array[string]} classes es un array de string de todas las
+ *  clases que se quieren insertar(este parametro es opcional)
+ *
+ * retorna un nodo link y clases asignadas
+ */
+const newLink = (href, text, classes = []) => {
+  const oneElement = createTagWithClasses('a', classes);
+  oneElement.innerText = text;
+  oneElement.href = href;
+  return oneElement;
+};
+
+/**
  * @param {string} type es el tipo de etiqueta que se va a crear
  * @param {object} imgData
  * @param {string} imgData.src es el src de la imagen
@@ -73,19 +86,4 @@ const newMultimedia = (type, { src, alt }, classes = []) => {
   return container;
 };
 
-/**
- * @param {string} href es la direccion a la que queremos que lleve el link
- * @param {string} text el texto que queremos que se vea en el link
- * @param {array[string]} classes es un array de string de todas las
- *  clases que se quieren insertar(este parametro es opcional)
- *
- * retorna un nodo link y clases asignadas
- */
-const newLink = (href, text, classes = []) => {
-  const oneElement = createTagWithClasses('a', classes);
-  oneElement.innerText = text;
-  oneElement.href = href;
-  return oneElement;
-};
-
-export { newText, newMultimedia, newLink, newContainer };
+export { newContainer, newText, newLink, newMultimedia };
