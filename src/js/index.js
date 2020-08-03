@@ -1,5 +1,6 @@
 // Component imports
 import { defaultComp } from './components/default';
+import { scrollIndicator } from './components/scroll-indicator';
 import { navigationComponent } from './components/navigation';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
@@ -10,6 +11,7 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
+  'scroll-indicator': scrollIndicator,
   footer: footerComp,
   navigation: navigationComponent,
 };

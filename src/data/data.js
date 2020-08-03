@@ -67,6 +67,15 @@ const pageData = {
         backgroundImg: '',
       },
       {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
         component: 'programs',
         title: 'Nuestros programas',
         text:
@@ -188,6 +197,15 @@ const pageData = {
         ],
       },
       {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
         name: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
@@ -212,6 +230,15 @@ const pageData = {
         hour: '3:30 p.m.',
         place: 'Fundación Ser Hábil, sala 3',
         outstandingFlag: true,
+      },
+      {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
       },
       {
         name: 'event',
