@@ -15,12 +15,6 @@ const createControls = (cardsContainer) => {
 
   controlLeft.addEventListener('click', () => {
     cardsContainer.scrollLeft -= 200;
-    if (cardsContainer.scrollLeft === 0) {
-      controlLeft.classList.add('slider__control--inactive');
-    }
-    if (controlRight.classList.contains('slider__control--inactive')) {
-      controlRight.classList.remove('slider__control--inactive');
-    }
   });
 
   controlRight.addEventListener('click', () => {

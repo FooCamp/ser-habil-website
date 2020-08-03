@@ -28,17 +28,14 @@
   &__container {
     position: relative;
     width: 100%;
-
-  }
-
-
+  };
 
   &-cards__container {
     display: flex;
     overflow-y: hidden;
     position: relative;
     width: 100%;
-  }
+  };
 
   &-card {
     display: flex;
@@ -48,18 +45,17 @@
     margin-right: 15px;
     margin-top: 40px;
     width: 375px;
-
   };
 
   &-card:first-of-type {
     margin-left: 0;
     padding-left: 50px;
-  }
+  };
 
   &-card:last-of-type {
     margin-right: 0;
     padding-right: 50px;
-  }
+  };
 
   &-card__img {
     height: 334px;
@@ -81,28 +77,26 @@
     position: absolute;
     top: 0;
     width: 50px;
-
-
-  }
+  };
 
   &__control--right {
     right: 0;
-  }
+  };
 
   &__control--left {
     left: 0;
-  }
+  };
 
   @supports (scroll-snap-align: start) {
     /* modern scroll snap points */
     &-cards__container {
       scroll-snap-type: x mandatory;
-    }
+    };
 
     &-card {
       scroll-snap-align: center;
-    }
-  }
+    };
+  };
 };
 
 
