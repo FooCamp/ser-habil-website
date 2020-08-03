@@ -1,7 +1,9 @@
 // Component imports
 import { defaultComp } from './components/default';
 import { navigationComponent } from './components/navigation';
+import { scrollIndicator } from './components/scroll-indicator';
 import { programsComp } from './components/programs';
+import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
 
 /**
@@ -11,7 +13,9 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   navigation: navigationComponent,
+  'scroll-indicator': scrollIndicator,
   programs: programsComp,
+  footer: footerComp,
 };
 
 const getCurrentPage = () => {

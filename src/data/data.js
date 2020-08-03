@@ -67,6 +67,15 @@ const pageData = {
         backgroundImg: '',
       },
       {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
         component: 'programs',
         title: 'Nuestros programas',
         text:
@@ -136,6 +145,47 @@ const pageData = {
           },
         ],
       },
+      {
+        component: 'footer',
+        logo: {
+          href: 'http://www.google.com',
+          image: {
+            src: 'footer-logo.png',
+            alt: 'SER HABIL',
+          },
+        },
+        items: [
+          {
+            text: 'Eventos',
+            href: 'http://www.google.com',
+          },
+          {
+            text: 'Fundación',
+            href: 'http://www.google.com',
+          },
+          {
+            text: 'Contacto',
+            href: 'http://www.google.com',
+          },
+        ],
+        socialText: 'Encuentrános en nuestras redes sociales:',
+        socialLinks: [
+          {
+            href: 'https://www.facebook.com',
+            icon: {
+              src: 'facebook-icon.png',
+              alt: 'facebook'
+            },
+          },
+          {
+            href: 'https://www.instagram.com',
+            icon: {
+              src: 'instagram-icon.png',
+              alt: 'instagram'
+            }
+          },
+        ],
+      },
     ],
   },
   contact: {
@@ -155,6 +205,15 @@ const pageData = {
             alt: 'cellphome',
           },
         ],
+      },
+      {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
       },
       {
         name: 'contactUs',
@@ -181,6 +240,15 @@ const pageData = {
         hour: '3:30 p.m.',
         place: 'Fundación Ser Hábil, sala 3',
         outstandingFlag: true,
+      },
+      {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
       },
       {
         name: 'event',
