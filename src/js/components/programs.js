@@ -1,27 +1,38 @@
+/* eslint-disable no-else-return */
 /* eslint-disable no-param-reassign */
 /* eslint-disable import/prefer-default-export */
 import { newText, newMultimedia, newContainer } from './helpers';
 
 /**
- * @param {array[nodesHTMl]} cardsContainer es el array de nodosHTML que contiene el
- *  ul los li y las cards
- * crea unos divs invisibles que serviran para mover las cards del slider dando clic
- * agrega la funcionalidad para que al darle clic a los divs invisibles de scroll tanto
- *  a derecha como a izquierda
+ * agrega la funcionalidad de scroll cuando se le da clic a la imagen
+ * @param {DOM element} container es el ul contenedor de las imagenes
  */
-const createControls = (cardsContainer) => {
-  const controlLeft = newContainer('div', [], ['slider__control', 'slider__control--left']);
-  const controlRight = newContainer('div', [], ['slider__control', 'slider__control--right']);
+const addButtonsListeners = (container) => {
+  const buttonList = [...container.querySelectorAll('.js-button-card')];
 
-  controlLeft.addEventListener('click', () => {
-    cardsContainer.scrollLeft -= 200;
+  buttonList.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      const targetElement = event.target;
+      const elementCoordinates = targetElement.getBoundingClientRect();
+      const containerScrollLeft = container.scrollLeft;
+      const containerWidth = container.offsetWidth;
+      const isPreviousImage = elementCoordinates.left < 0;
+      const isActualImage = elementCoordinates.left > 0 && elementCoordinates.right < containerWidth;
+      let scrollDelta = 0;
+
+      if (isActualImage) {
+        return;
+      } else if (isPreviousImage) {
+        scrollDelta = containerScrollLeft - elementCoordinates.width;
+      } else {
+        scrollDelta = containerScrollLeft + elementCoordinates.width;
+      }
+      container.scrollTo({
+        left: scrollDelta,
+        behavior: 'smooth',
+      });
+    });
   });
-
-  controlRight.addEventListener('click', () => {
-    cardsContainer.scrollLeft += 200;
-  });
-
-  return [controlLeft, controlRight];
 };
 
 /**
@@ -31,8 +42,10 @@ const createControls = (cardsContainer) => {
 const createCards = (cardList) => {
   const cardNodes = cardList.map((card) => {
     const text = newText('p', card.text, ['slider-card__text']);
-    const img = newMultimedia('img', card.src, card.alt, ['slider-card__img']);
-    const cardItem = newContainer('li', [img, text], ['slider-card']);
+    const img = newMultimedia('img', card, ['slider-card__img']);
+    const buttonCard = newContainer('button', [img], ['js-button-card']);
+    const cardItem = newContainer('li', [buttonCard, text], ['slider-card']);
+
     return cardItem;
   });
   return cardNodes;
@@ -46,12 +59,14 @@ const programsComp = (data) => {
   const cardList = createCards(data.images);
   // contenedor de imagenes
   const containerCards = newContainer('ul', cardList, ['slider-cards__container']);
-  const scrollControls = createControls(containerCards);
-  const slider = newContainer('div', [containerCards, ...scrollControls], ['slider__container']);
+  const slider = newContainer('div', [containerCards], ['slider__container']);
   const text = newText('p', data.text, ['slider__text']);
   const title = newText('h2', data.title, ['slider__title']);
   // contenedor principal
   const section = newContainer('section', [title, text, slider], ['slider']);
+  section.id = 'scroll';
+  addButtonsListeners(containerCards);
+
   return section;
 };
 
