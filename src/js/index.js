@@ -1,7 +1,8 @@
 // Component imports
 import { defaultComp } from './components/default';
-import { scrollIndicator } from './components/scroll-indicator';
 import { navigationComponent } from './components/navigation';
+import { scrollIndicator } from './components/scroll-indicator';
+import { programsComp } from './components/programs';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
 
@@ -11,18 +12,22 @@ import { pageData } from '../data/data';
  */
 const components = {
   default: defaultComp,
-  'scroll-indicator': scrollIndicator,
-  footer: footerComp,
   navigation: navigationComponent,
+  'scroll-indicator': scrollIndicator,
+  programs: programsComp,
+  footer: footerComp,
 };
 
 const getCurrentPage = () => {
-  const path = window.location.href.split('/');
-  const location = path.slice(-1)[0] || 'home';
+  const clean = window.location.href.split('#');
+  const path = clean[0].split('/');
+  const location = path.slice(-1)[0].replace('.html', '') || 'home';
+
   if (!pageData[location] || location === 'common') {
     window.location.replace('/');
   }
-  return location.replace('.html', '');
+
+  return location;
 };
 
 /**
@@ -68,5 +73,7 @@ const pageInit = (data, { initalSections, finalSections }) => {
   appendSections(data.sections);
   appendSections(finalSections);
 };
+
+console.log(getCurrentPage());
 
 pageInit(pageData[getCurrentPage()], pageData.common);

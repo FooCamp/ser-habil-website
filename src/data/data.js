@@ -34,14 +34,24 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
-            alt: 'playground',
+            src: 'medioAcuatico.jpg',
+            alt: 'medio acuático',
             text: 'Medio acuático y estimulación terapéutica',
           },
           {
-            src: '',
-            alt: 'kids',
-            text: '',
+            src: 'iniciacion.jpg',
+            alt: 'iniciación al deporte',
+            text: 'Iniciación y formación deportiva',
+          },
+          {
+            src: 'estiramiento.jpg',
+            alt: 'entrenamiento deportivo',
+            text: 'Entrenamiento deportivo y actividad física',
+          },
+          {
+            src: 'padres.jpg',
+            alt: 'padres y madres',
+            text: 'Grupo de padres y madres',
           },
         ],
       },
@@ -68,22 +78,20 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
+        src: '',
+        alt: 'Piscina',
+        name: 'Catalina López',
+        subtitle: 'Campeona nacional de natación',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
             src: '',
             alt: 'Piscina',
-            component: 'Catalina López',
-            title: 'Campeona nacional de natación',
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
           },
           {
             src: '',
-            alt: 'Piscina',
-            component: 'Catalina López',
-            title: 'Campeona nacional de natación',
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            alt: 'Catalita',
           },
         ],
       },
@@ -117,7 +125,7 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        name: 'contactUs',
+        component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -152,7 +160,7 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        name: 'event',
+        component: 'event',
         title: 'Curso de pintura con acuarelas',
         image: '',
         text:
@@ -288,4 +296,5 @@ const pageData = {
   },
 };
 
+// eslint-disable-next-line import/prefer-default-export
 export { pageData };
