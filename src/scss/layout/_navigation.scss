@@ -43,8 +43,10 @@
   }
 
   &__overlay--active {
+    position: fixed;
     transform: translateY(0);
   }
+  
 
   &__overlay-list {
     color: $white;
