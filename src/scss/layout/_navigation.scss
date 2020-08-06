@@ -31,10 +31,9 @@
     background-color: $black;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     left: 0;
-    padding: 0 29px 0 69px;
-    position: absolute;
+    padding: 0 29px 134px 69px;
+    position: absolute; 
     top: 0;
     transform: translateY(-100%);
     transition: transform 1s ease-out;
@@ -43,8 +42,11 @@
   }
 
   &__overlay--active {
-    position: fixed;
     transform: translateY(0);
+    overflow-y: scroll;
+    top: 0; right: 0; left: 0; bottom: 0;
+    position: fixed;
+    
   }
   
 
