@@ -86,7 +86,7 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'event-1.jpg',
             alt: 'Piscina',
           },
           {
