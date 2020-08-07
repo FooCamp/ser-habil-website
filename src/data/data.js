@@ -34,7 +34,7 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'medioAcuatico.jpg',
+            src: 'medio-acuatico.jpg',
             alt: 'medio acuático',
             text: 'Medio acuático y estimulación terapéutica',
           },
