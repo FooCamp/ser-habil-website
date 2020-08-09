@@ -1,8 +1,61 @@
-.carousel{
+.carousel {
   align-items: center;
   background-image: url('../static/assets/forma-2.png');
   background-position: right;
-  background-position-y: 155px;
+  background-position-y: 80px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+
+  &__button {
+    border: none;
+    height: 40px;
+    margin:auto;
+    width: 40px;
+
+
+    &--right {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__title {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 21px;
+    text-align: center;
+    width: 200px;
+
+  }
+
+  &__text {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    height: 64px;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 270px;
+  }
+
+  &-card {
+    display: none;
+
+
+    &--active {
+      display: block;
+    }
+    &__img {
+      width: 246px;
+      height: 334px;
+      margin: 0 10px;
+    }
+  }
+  &__container {
+    display:flex;
+    flex-direction: row;
+  }
+}
+
