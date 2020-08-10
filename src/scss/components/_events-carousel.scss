@@ -16,8 +16,9 @@
     &--right {
       transform: rotate(180deg);
     }
+
     &--disabled {
-      opacity:50%;
+      opacity: 50%;
     }
   }
 
@@ -33,8 +34,9 @@
     margin-top: 21px;
     text-align: center;
     width: 200px;
-}
-&__subtitle{
+  }
+
+&__subtitle {
     font-family: $hkgrotesk-bold;
     font-size: $mobile-title;
     line-height: 1;
@@ -42,7 +44,7 @@
     margin-top: 21px;
     text-align: center;
     width: 300px;
-}
+  }
 
   &__text {
     color: $gray;
@@ -55,37 +57,37 @@
   }
 
   &__cards-container {
-    position: relative;
-    width: 246px;
     height: 334px;
     margin: 0 10px;
+    position: relative;
+    width: 246px;
   }
 
   &-card {
-    position:absolute;
     opacity: 0;
+    position: absolute;
     transition: opacity 1s linear;
-
 
     &--active {
       opacity: 1;
     }
+
     &__img {
-      width: 246px;
-      height: 334px;
-      overflow: hidden;
       display: flex;
+      height: 334px;
       justify-content: center;
+      overflow: hidden;
+      width: 246px;
 
       & img {
-        width: initial;
         height: 100%;
-
+        width: initial;
       }
     }
   }
+
   &__container {
-    display:flex;
+    display: flex;
     flex-direction: row;
   }
 }
