@@ -8,15 +8,21 @@
   flex-direction: column;
 
   &__button {
-    border: none;
+    border: 0;
     height: 40px;
-    margin:auto;
+    margin: auto;
     width: 40px;
-
 
     &--right {
       transform: rotate(180deg);
     }
+    &--disabled {
+      opacity:50%;
+    }
+  }
+
+  &__button:focus {
+    outline: none;
   }
 
   &__title {
@@ -27,8 +33,16 @@
     margin-top: 21px;
     text-align: center;
     width: 200px;
-
-  }
+}
+&__subtitle{
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 21px;
+    text-align: center;
+    width: 300px;
+}
 
   &__text {
     color: $gray;
@@ -40,17 +54,34 @@
     width: 270px;
   }
 
+  &__cards-container {
+    position: relative;
+    width: 246px;
+    height: 334px;
+    margin: 0 10px;
+  }
+
   &-card {
-    display: none;
+    position:absolute;
+    opacity: 0;
+    transition: opacity 1s linear;
 
 
     &--active {
-      display: block;
+      opacity: 1;
     }
     &__img {
       width: 246px;
       height: 334px;
-      margin: 0 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+
+      & img {
+        width: initial;
+        height: 100%;
+
+      }
     }
   }
   &__container {
