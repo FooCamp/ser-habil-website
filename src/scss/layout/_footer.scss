@@ -35,7 +35,8 @@
 
     &-links {
       display: inline-block;
-        &:not(:last-of-type) {
+
+      &:not(:last-of-type) {
         margin-right: 40px;
       }
     }

@@ -12,4 +12,3 @@ const defaultComp = (data) => {
 };
 
 export { defaultComp };
-export default 'defaultComp';
