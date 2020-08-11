@@ -1,17 +1,20 @@
 import { newText, newContainer, newMultimedia } from './helpers'
+
 let currentCard = 0;
 let cardList;
 
 const createCards = (cardList) => {
   const cardCenter = cardList.map((card, index) => {
-    const liClasses = index === 0 ? ['carousel-card', 'carousel-card--active'] : ['carousel-card'];
+    const liClasses = !index  ? ['carousel-card', 'carousel-card--active'] : ['carousel-card'];
     const cardImage = newMultimedia('img', card, ['carousel-card__img']);
     const cardItem = newContainer('li', [cardImage], liClasses);
 
     return cardItem;
   });
+
   return cardCenter;
 };
+
 const clickLeft = () => {
   const buttonLeft = document.querySelector('.carousel__button--left');
   const buttonRigth = document.querySelector('.carousel__button--right');
@@ -21,10 +24,11 @@ const clickLeft = () => {
   cardList[currentCard].classList.remove('carousel-card--active');
   currentCard--;
   cardList[currentCard].classList.add('carousel-card--active');
-  if (currentCard === 0){
+  if (!currentCard ){
     buttonLeft.classList.add('carousel__button--disabled');
   }
 }
+
 const clickRight = () => {
   const buttonLeft = document.querySelector('.carousel__button--left');
   const buttonRigth = document.querySelector('.carousel__button--right');
