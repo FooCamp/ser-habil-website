@@ -20,15 +20,16 @@ const pageData = {
       },
       {
         component: 'scroll-indicator',
+        methods: 'scroll-indicator-methods',
         image: {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
-        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {
         component: 'programs',
+        methods: 'programs-methods',
         title: 'Nuestros programas',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -117,11 +118,11 @@ const pageData = {
       },
       {
         component: 'scroll-indicator',
+        methods: 'scroll-indicator-methods',
         image: {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
-        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {
@@ -152,11 +153,11 @@ const pageData = {
       },
       {
         component: 'scroll-indicator',
+        methods: 'scroll-indicator-methods',
         image: {
           src: 'arrow-scroll.png',
           alt: 'scroll page',
         },
-        scrollTo: 'scroll',
         text: 'Haz scroll para continuar',
       },
       {

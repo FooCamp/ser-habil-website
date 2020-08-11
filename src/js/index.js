@@ -1,10 +1,12 @@
 // Component imports
 import { defaultComp } from './components/default';
 import { navigationComponent } from './components/navigation';
-import { scrollIndicator } from './components/scroll-indicator';
-import { programsComp } from './components/programs';
+import { scrollIndicator } from './components/scroll-indicator/scroll-indicator';
+import { programsComp } from './components/programs/programs';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
+
+import { scrollIndicatorMethods, programsMethods } from './components';
 
 /**
  * Component map
@@ -16,6 +18,11 @@ const components = {
   'scroll-indicator': scrollIndicator,
   programs: programsComp,
   footer: footerComp,
+};
+
+const componentMethods = {
+  'scroll-indicator-methods': scrollIndicatorMethods,
+  'programs-methods': programsMethods
 };
 
 const getCurrentPage = () => {
@@ -53,6 +60,9 @@ const appendSections = (sections) => {
       pageWrapper.appendChild(components[section.component](section));
       // eslint-disable-next-line no-console
       console.log(section.component, 'loaded!');
+      if (section.methods) {
+        componentMethods[section.methods]();
+      }
     } else {
       pageWrapper.appendChild(components.default(section));
       // eslint-disable-next-line no-console
