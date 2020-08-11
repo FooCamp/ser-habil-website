@@ -210,23 +210,23 @@ const pageData = {
           src: 'logo.png',
           alt: 'Logo Ser habil',
         },
-        logoUrl: 'https://www.google.com',
+        logoUrl: '/',
         navLinks: [
           {
             text: 'inicio',
-            url: 'https://www.google.com',
+            url: '/',
           },
           {
             text: 'eventos',
-            url: 'https://www.google.com',
+            url: '/events',
           },
           {
             text: 'fundación',
-            url: 'https://www.google.com',
+            url: '/foundation',
           },
           {
             text: 'contacto',
-            url: 'https://www.google.com',
+            url: '/contact',
           },
         ],
         socialMedia: {
@@ -254,7 +254,7 @@ const pageData = {
       {
         component: 'footer',
         logo: {
-          href: 'http://www.google.com',
+          href: '/',
           image: {
             src: 'footer-logo.png',
             alt: 'SER HABIL',
@@ -263,15 +263,15 @@ const pageData = {
         items: [
           {
             text: 'Eventos',
-            href: 'http://www.google.com',
+            href: '/events',
           },
           {
             text: 'Fundación',
-            href: 'http://www.google.com',
+            href: '/foundation',
           },
           {
             text: 'Contacto',
-            href: 'http://www.google.com',
+            href: '/contact',
           },
         ],
         socialText: 'Encuentrános en nuestras redes sociales:',
