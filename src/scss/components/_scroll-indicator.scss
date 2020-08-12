@@ -1,15 +1,22 @@
 .scroll {
   background-color: $white;
   display: block;
-  margin-bottom:76px;
-  padding: 20px 0 0 0;
+  margin-bottom: 76px;
+  padding: 20px 0 0;
+
+  @include viewport-desktop() {
+    &__text {
+      display: block;
+      text-align: center;
+    }
+  }
 
   &__button {
     align-self: center;
-    border: none;
+    border: 0;
     display: flex;
     height: 40px;
-    margin:auto;
+    margin: auto;
     width: 40px;
   }
 
@@ -23,15 +30,7 @@
     font-size: $mobile-card-titles;
   }
 
-  @include viewport-desktop() {
-    &__text {
-      display: block;
-      text-align: center;
-    }
-  }
-
   &__image {
     background-color: $white;
   }
 }
-
