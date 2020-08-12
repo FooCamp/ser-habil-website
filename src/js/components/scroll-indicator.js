@@ -7,14 +7,15 @@ const scrollIndicator = (data) => {
   image.alt = data.image.alt;
   const text = newText('p', data.text, ['scroll__text']);
   const section = newContainer('section', [button, text], ['scroll']);
-  button.addEventListener('click', () => {
+  const scrollFunction = () => {
     const scrollAnimation = document.getElementById(data.scrollTo);
-    const positions = scrollAnimation.getBoundingClientRect();
+    const position = scrollAnimation.offsetTop;
     window.scrollTo({
-      top: positions.top,
+      top: position,
       behavior: 'smooth',
     });
-  });
+  };
+  button.addEventListener('click', scrollFunction);
   return section;
 };
 

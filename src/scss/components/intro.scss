@@ -1,12 +1,12 @@
-.Intro {
-  background-image: url('../static/assets/FormaCirculoAzul.png');
+.intro {
+  background-image: url('../static/assets/blue-form.png');
   background-position-x: right;
   background-position-y: 254px;
   background-repeat: no-repeat;
 
-  &__containerGeneral {
+  &__container-general {
     align-items: center;
-    background-image: url('../static/assets/FormaNaranja.png');
+    background-image: url('../static/assets/orange-form.png');
     background-position-x: 53px;
     background-position-y: 14px;
     background-repeat: no-repeat;

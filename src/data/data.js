@@ -2,64 +2,16 @@ const pageData = {
   home: {
     sections: [
       {
-        component: 'navigation',
-        image: {
-          src: 'logo.png',
-          alt: 'Logo Ser habil',
-        },
-        logoUrl: 'https://www.google.com',
-        navLinks: [
-          {
-            text: 'inicio',
-            url: 'https://www.google.com',
-          },
-          {
-            text: 'eventos',
-            url: 'https://www.google.com',
-          },
-          {
-            text: 'fundación',
-            url: 'https://www.google.com',
-          },
-          {
-            text: 'contacto',
-            url: 'https://www.google.com',
-          },
-        ],
-        socialMedia: {
-          text: 'Encuéntranos en nuestras redes sociales:',
-          socialLinks:[
-            {
-              image: {
-                src: 'facebook-icon.png',
-                alt: 'Facebook'
-              },
-              url:'https://www.facebook.com'
-            },
-            {
-              image: {
-                src: 'instagram-icon.png',
-                alt: 'instagram'
-              },
-              url:'https://www.instagram.com'
-            }
-
-
-          ]
-        },
-
-      },
-      {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
         text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'Niño.jpg',
+            src: 'playing.jpg',
             alt: 'playground',
           },
           {
-            src: 'padres.jpg',
+            src: 'childs.png',
             alt: 'kids',
           },
         ],
@@ -81,7 +33,7 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'medioAcuatico.jpg',
+            src: 'medio-acuatico.jpg',
             alt: 'medio acuático',
             text: 'Medio acuático y estimulación terapéutica',
           },
@@ -125,63 +77,20 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
+        src: '',
+        alt: 'Piscina',
+        name: 'Catalina López',
+        subtitle: 'Campeona nacional de natación',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
             src: '',
             alt: 'Piscina',
-            name: 'Catalina López',
-            title: 'Campeona nacional de natación',
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
           },
           {
             src: '',
-            alt: 'Piscina',
-            name: 'Catalina López',
-            title: 'Campeona nacional de natación',
-            text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-          },
-        ],
-      },
-      {
-        component: 'footer',
-        logo: {
-          href: 'http://www.google.com',
-          image: {
-            src: 'footer-logo.png',
-            alt: 'SER HABIL',
-          },
-        },
-        items: [
-          {
-            text: 'Eventos',
-            href: 'http://www.google.com',
-          },
-          {
-            text: 'Fundación',
-            href: 'http://www.google.com',
-          },
-          {
-            text: 'Contacto',
-            href: 'http://www.google.com',
-          },
-        ],
-        socialText: 'Encuentrános en nuestras redes sociales:',
-        socialLinks: [
-          {
-            href: 'https://www.facebook.com',
-            icon: {
-              src: 'facebook-icon.png',
-              alt: 'facebook'
-            },
-          },
-          {
-            href: 'https://www.instagram.com',
-            icon: {
-              src: 'instagram-icon.png',
-              alt: 'instagram'
-            }
+            alt: 'Catalita',
           },
         ],
       },
@@ -190,7 +99,7 @@ const pageData = {
   contact: {
     sections: [
       {
-        name: 'contactHero',
+        component: 'contactHero',
         title: 'Unete a nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -215,7 +124,7 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        name: 'contactUs',
+        component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -230,7 +139,7 @@ const pageData = {
   events: {
     sections: [
       {
-        name: 'event',
+        component: 'event',
         title: 'Dia de campo',
         image: '',
         text:
@@ -250,7 +159,7 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        name: 'event',
+        component: 'event',
         title: 'Curso de pintura con acuarelas',
         image: '',
         text:
@@ -261,7 +170,7 @@ const pageData = {
         outstandingFlag: false,
       },
       {
-        name: 'event',
+        component: 'event',
         title: 'Curso de pintura con acuarelas',
         image: '',
         text:
@@ -273,10 +182,10 @@ const pageData = {
       },
     ],
   },
-  fundacion: {
+  foundation: {
     sections: [
       {
-        name: 'fundacion',
+        component: 'fundacion',
         hero: {
           image1: '',
           image2: '',
@@ -292,61 +201,95 @@ const pageData = {
       },
     ],
   },
-  navigation: {
-    items: [
+  common: {
+    initalSections: [
       {
-        text: 'Inicio',
-        href: 'index',
-      },
-      {
-        text: 'Eventos',
-        href: 'eventos',
-      },
-      {
-        text: 'Fundacion',
-        href: 'fundacion',
-      },
-      {
-        text: 'Contacto',
-        href: 'contacto',
+        component: 'navigation',
+        image: {
+          src: 'logo.png',
+          alt: 'Logo Ser habil',
+        },
+        logoUrl: '/',
+        navLinks: [
+          {
+            text: 'inicio',
+            url: '/',
+          },
+          {
+            text: 'eventos',
+            url: '/events',
+          },
+          {
+            text: 'fundación',
+            url: '/foundation',
+          },
+          {
+            text: 'contacto',
+            url: '/contact',
+          },
+        ],
+        socialMedia: {
+          text: 'Encuéntranos en nuestras redes sociales:',
+          socialLinks: [
+            {
+              image: {
+                src: 'facebook-icon.png',
+                alt: 'Facebook',
+              },
+              url: 'https://www.facebook.com',
+            },
+            {
+              image: {
+                src: 'instagram-icon.png',
+                alt: 'instagram',
+              },
+              url: 'https://www.instagram.com',
+            },
+          ],
+        },
       },
     ],
-    socialText: 'Encuentranos en nuestras redes sociales',
-    socialLinks: [
+    finalSections: [
       {
-        href: 'instagram.com',
-        icon: 'instagram',
-      },
-      {
-        href: 'facebook.com',
-        icon: 'facebook',
-      },
-    ],
-  },
-  footer: {
-    items: [
-      {
-        text: 'Eventos',
-        href: 'eventos',
-      },
-      {
-        text: 'Fundacion',
-        href: 'fundacion',
-      },
-      {
-        text: 'Contacto',
-        href: 'contacto',
-      },
-    ],
-    socialText: 'Encuentranos en nuestras redes sociales',
-    socialLinks: [
-      {
-        href: 'instagram.com',
-        icon: 'instagram',
-      },
-      {
-        href: 'facebook.com',
-        icon: 'facebook',
+        component: 'footer',
+        logo: {
+          href: '/',
+          image: {
+            src: 'footer-logo.png',
+            alt: 'SER HABIL',
+          },
+        },
+        items: [
+          {
+            text: 'Eventos',
+            href: '/events',
+          },
+          {
+            text: 'Fundación',
+            href: '/foundation',
+          },
+          {
+            text: 'Contacto',
+            href: '/contact',
+          },
+        ],
+        socialText: 'Encuentrános en nuestras redes sociales:',
+        socialLinks: [
+          {
+            href: 'https://www.facebook.com',
+            icon: {
+              src: 'facebook-icon.png',
+              alt: 'facebook',
+            },
+          },
+          {
+            href: 'https://www.instagram.com',
+            icon: {
+              src: 'instagram-icon.png',
+              alt: 'instagram',
+            },
+          },
+        ],
       },
     ],
   },
