@@ -44,23 +44,22 @@ const pageData = {
               url:'https://www.instagram.com'
             }
 
-          
+
           ]
         },
-        
+
       },
       {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'Niño.jpg',
             alt: 'playground',
           },
           {
-            src: '',
+            src: 'padres.jpg',
             alt: 'kids',
           },
         ],

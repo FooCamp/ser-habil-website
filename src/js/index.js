@@ -1,6 +1,7 @@
 // Component imports
 import { defaultComp } from './components/default';
 import { navigationComponent } from './components/navigation';
+import { componentIntro } from './components/intro';
 import { scrollIndicator } from './components/scroll-indicator';
 import { programsComp } from './components/programs';
 import { footerComp } from './components/footer';
@@ -13,6 +14,7 @@ import { pageData } from '../data/data';
 const components = {
   default: defaultComp,
   navigation: navigationComponent,
+  hero: componentIntro,
   'scroll-indicator': scrollIndicator,
   programs: programsComp,
   footer: footerComp,
