@@ -9,7 +9,7 @@ const createLinks = (dataLinks) => {
   });
 
   return arrayLinks;
-}
+};
 
 const createIcons = (dataIcons) => {
   const arrayIcons = dataIcons.map((icons) => {
@@ -22,7 +22,7 @@ const createIcons = (dataIcons) => {
   });
 
   return arrayIcons;
-}
+};
 
 const footerComp = (data) => {
   const logoFooter = newMultimedia('img', data.logo.image, ['footer__logo']);
@@ -32,7 +32,11 @@ const footerComp = (data) => {
   const socialText = newText('p', data.socialText, ['footer__social-text']);
   const socialIcons = createIcons(data.socialLinks);
   linkLogo.appendChild(logoFooter);
-  const footer = newContainer('footer', [linkLogo, items, socialText, ...socialIcons], ['footer']);
+  const footer = newContainer(
+    'footer',
+    [linkLogo, items, socialText, ...socialIcons],
+    ['footer']
+  );
 
   return footer;
 };

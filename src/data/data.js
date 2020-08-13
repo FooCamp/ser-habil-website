@@ -254,7 +254,7 @@ const pageData = {
       {
         component: 'footer',
         logo: {
-          href: 'http://www.google.com',
+          href: '/',
           image: {
             src: 'footer-logo.png',
             alt: 'SER HABIL',
@@ -263,15 +263,15 @@ const pageData = {
         items: [
           {
             text: 'Eventos',
-            href: 'http://www.google.com',
+            href: '/events',
           },
           {
             text: 'Fundación',
-            href: 'http://www.google.com',
+            href: '/foundation',
           },
           {
             text: 'Contacto',
-            href: 'http://www.google.com',
+            href: '/contact',
           },
         ],
         socialText: 'Encuentrános en nuestras redes sociales:',

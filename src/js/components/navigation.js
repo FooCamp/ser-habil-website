@@ -36,23 +36,42 @@ const navigationComponent = (data) => {
 
   const menuButton = newContainer('button', [imageMenu], ['nav__icon']);
 
-  const collapsedMenuContainer = newContainer('div', [logoLink, menuButton], ['nav__main']);
+  const collapsedMenuContainer = newContainer(
+    'div',
+    [logoLink, menuButton],
+    ['nav__main']
+  );
 
   // Overlay
-  const imageClose = newMultimedia('img', { src: 'close.png', alt: 'close button' });
+  const imageClose = newMultimedia('img', {
+    src: 'close.png',
+    alt: 'close button',
+  });
 
   const overlayLinks = renderLinks(data.navLinks, 'text');
   const menuList = newContainer('ul', overlayLinks, ['nav__overlay-list']);
-  const overlayButton = newContainer('button', [imageClose], ['nav__icon', 'nav__icon--close']);
+  const overlayButton = newContainer(
+    'button',
+    [imageClose],
+    ['nav__icon', 'nav__icon--close']
+  );
 
   const copyText = newText('p', data.socialMedia.text, ['nav__overlay-text']);
   const socialIcons = renderLinks(data.socialMedia.socialLinks, 'image');
   const socialList = newContainer('ul', socialIcons, ['nav__overlay-social']);
 
   const socialMedia = newContainer('div', [copyText, socialList], []);
-  const overlay = newContainer('nav', [overlayButton, menuList, socialMedia], ['nav__overlay']);
+  const overlay = newContainer(
+    'nav',
+    [overlayButton, menuList, socialMedia],
+    ['nav__overlay']
+  );
 
-  const header = newContainer('header', [collapsedMenuContainer, overlay], ['nav']);
+  const header = newContainer(
+    'header',
+    [collapsedMenuContainer, overlay],
+    ['nav']
+  );
 
   menuButton.addEventListener('click', () => {
     overlay.classList.add('nav__overlay--active');
