@@ -1,7 +1,7 @@
 import { newText, newMultimedia, newContainer } from './helpers';
 
 /**
- * @param {Array [objectImages]} imagesArrays es un array de imagenes de la data
+ * @param {Array [objectImages]} imagesArrays esta función recibe un arreglo de objetos y retorna una lista de imagenés
  * Toma el array de 'imagesArrays' le coloca un map que nos crean una imagen por elemento
  * del array y nos coloca una clase y un modificador que cambia según el número de elementos llamados y nos retorna
  * un array de nodos de imagénes.
