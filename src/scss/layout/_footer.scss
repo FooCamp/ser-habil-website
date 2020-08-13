@@ -35,9 +35,17 @@
 
     &-links {
       display: inline-block;
-        &:not(:last-of-type) {
+      &:not(:last-of-type) {
         margin-right: 40px;
       }
     }
   }
+
+  @include viewport-desktop() {
+      &__desktop {
+        padding: 111px 106px 111px 124px;
+        display: flex;
+      }
+  }
+
 }

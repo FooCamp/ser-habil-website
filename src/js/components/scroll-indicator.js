@@ -1,7 +1,7 @@
 import { newText, newContainer } from './helpers';
 
 const scrollIndicator = (data) => {
-  const image = newContainer('img', [], ['scroll__image', 'scroll__bounce']);
+  const image = newContainer('img', [], ['scroll__image', 'scroll--bounce']);
   const text = newText('p', data.text, ['scroll__text']);
   const button = newContainer('button', [image, text], ['scroll__button']);
   image.src = data.image.src;
