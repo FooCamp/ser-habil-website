@@ -78,19 +78,21 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
-        src: '',
-        alt: 'Piscina',
-        name: 'Catalina López',
-        subtitle: 'Campeona nacional de natación',
+        subtitle: 'Catalina López Campeona nacional de natación',
+        url: 'events.html',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'event-1.jpg',
             alt: 'Piscina',
           },
           {
-            src: '',
+            src: 'event-2.png',
+            alt: 'Catalita',
+          },
+          {
+            src: 'event-3.png',
             alt: 'Catalita',
           },
         ],
@@ -210,23 +212,23 @@ const pageData = {
           src: 'logo.png',
           alt: 'Logo Ser habil',
         },
-        logoUrl: 'https://www.google.com',
+        logoUrl: '/',
         navLinks: [
           {
             text: 'inicio',
-            url: 'https://www.google.com',
+            url: '/',
           },
           {
             text: 'eventos',
-            url: 'https://www.google.com',
+            url: '/events',
           },
           {
             text: 'fundación',
-            url: 'https://www.google.com',
+            url: '/foundation',
           },
           {
             text: 'contacto',
-            url: 'https://www.google.com',
+            url: '/contact',
           },
         ],
         socialMedia: {
@@ -254,7 +256,7 @@ const pageData = {
       {
         component: 'footer',
         logo: {
-          href: 'http://www.google.com',
+          href: '/',
           image: {
             src: 'footer-logo.png',
             alt: 'SER HABIL',
@@ -263,15 +265,15 @@ const pageData = {
         items: [
           {
             text: 'Eventos',
-            href: 'http://www.google.com',
+            href: '/events',
           },
           {
             text: 'Fundación',
-            href: 'http://www.google.com',
+            href: '/foundation',
           },
           {
             text: 'Contacto',
-            href: 'http://www.google.com',
+            href: '/contact',
           },
         ],
         socialText: 'Encuentrános en nuestras redes sociales:',
