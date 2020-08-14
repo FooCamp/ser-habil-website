@@ -4,6 +4,7 @@ import { navigationComponent } from './components/navigation';
 import { componentIntro } from './components/intro';
 import { scrollIndicator } from './components/scroll-indicator';
 import { programsComp } from './components/programs';
+import { eventsCarousel } from './components/events-carousel'
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
 
@@ -17,6 +18,7 @@ const components = {
   hero: componentIntro,
   'scroll-indicator': scrollIndicator,
   programs: programsComp,
+  events: eventsCarousel,
   footer: footerComp,
 };
 
