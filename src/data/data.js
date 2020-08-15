@@ -99,10 +99,47 @@ const pageData = {
       },
     ],
   },
+  about: {
+    sections: [
+      {
+        component: 'hero',
+        title: 'Unete a nosotros',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        aditionalTexts: [
+          {
+            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            bold: true
+          },
+          {
+            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+            bold: false
+          },
+        ],
+        images: [
+          {
+            src: '',
+            alt: '',
+          },
+          {
+            src: '',
+            alt: '',
+          },
+        ],
+      },
+      {
+        component: 'imageComponent',
+        image: {
+          src: '',
+          alt: '',
+        }
+      }
+    ],
+  },
   contact: {
     sections: [
       {
-        component: 'contactHero',
+        component: 'hero',
         title: 'Unete a nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -127,61 +164,149 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
+        component: 'contactForm'
+        // TODO: complete info contact form
+      },
+      {
+        component: 'map',
+        // TODO: complete map reference info
+      },
+      {
         component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        address: 'Carrera 52 No. 67A-15, Torre C, Piso 7, Ruta N',
-        city: 'Medellin',
-        country: 'Colombia',
-        telephones: ['+57 123 456 7890', '+57 123 456 7890'],
-        emails: ['hola@serhabil.com', 'hola@serhabil.com'],
+        [
+          {
+            label: 'Dirección',
+            texts: [
+              'Carrera 52 No. 67A-15',
+              'Torre C, Piso 7, Ruta N',
+              'Medellín, Colombia',
+            ],
+          },
+          {
+            label: 'Teléfono',
+            texts: ['+57 123 456 7890', '+57 123 456 7890']
+          },
+          {
+            label: 'Correo electrónico',
+            texts: ['hola@serhabil.com', 'hola@serhabil.com']
+          }
+        ]
       },
     ],
   },
   events: {
     sections: [
       {
-        component: 'event',
+        component: 'featuredEvent',
         title: 'Dia de campo',
         image: '',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        date: 'Febrero, 12, 2020',
-        hour: '3:30 p.m.',
-        place: 'Fundación Ser Hábil, sala 3',
-        outstandingFlag: true,
+        moreInfo: [
+          {
+            text: 'fecha',
+            description: 'Febrero, 12, 2020',
+          },
+          {
+            text: 'Hora',
+            description: '3:30 p.m.',
+          },
+          {
+            text: 'place',
+            description: 'Fundación Ser Hábil, sala 3',
+          },
+        ],
+        buttonInfo: {
+          text: 'Registrarme',
+          link: ''
+        }
       },
       {
-        component: 'scroll-indicator',
-        image: {
-          src: 'arrow-scroll.png',
-          alt: 'scroll page',
-        },
-        scrollTo: 'scroll',
-        text: 'Haz scroll para continuar',
-      },
-      {
-        component: 'event',
-        title: 'Curso de pintura con acuarelas',
-        image: '',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        date: 'Febrero, 12, 2020',
-        hour: '3:30 p.m.',
-        place: 'Fundación Ser Hábil, sala 3',
-        outstandingFlag: false,
-      },
-      {
-        component: 'event',
-        title: 'Curso de pintura con acuarelas',
-        image: '',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        date: 'Febrero, 12, 2020',
-        hour: '3:30 p.m.',
-        place: 'Fundación Ser Hábil, sala 3',
-        outstandingFlag: false,
+        component: 'events',
+        events: [
+          {
+            component: 'event',
+            title: 'Curso de pintura con acuarelas',
+            image: '',
+            text:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            moreInfo: [
+              {
+                text: 'fecha',
+                description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Hora',
+                description: '3:30 p.m.',
+              },
+              {
+                text: 'place',
+                description: 'Fundación Ser Hábil, sala 3',
+              },
+            ],
+            buttonInfo: {
+              text: 'Registrarme',
+              link: ''
+            }
+          },
+          {
+            component: 'event',
+            title: 'Curso de pintura con acuarelas',
+            image: '',
+            text:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            moreInfo: [
+              {
+                text: 'fecha',
+                description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Hora',
+                description: '3:30 p.m.',
+              },
+              {
+                text: 'place',
+                description: 'Fundación Ser Hábil, sala 3',
+              },
+            ],
+            buttonInfo: {
+              text: 'Registrarme',
+              link: ''
+            }
+          },
+          {
+            component: 'event',
+            title: 'Curso de pintura con acuarelas',
+            image: '',
+            text:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            moreInfo: [],
+            buttonInfo: {
+              text: 'Registrarme',
+              link: ''
+            }
+          },
+          {
+            component: 'event',
+            title: 'Curso de pintura con acuarelas',
+            image: '',
+            text:
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+            moreInfo: [
+              {
+                text: 'fecha',
+                description: 'Febrero, 12, 2020',
+              },
+            ],
+            buttonInfo: {
+              text: 'Registrarme',
+              link: ''
+            }
+          },
+        ],
       },
     ],
   },
