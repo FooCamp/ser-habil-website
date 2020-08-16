@@ -3,6 +3,7 @@ import { defaultComp } from './components/default';
 import { navigationComponent } from './components/navigation';
 import { scrollIndicator } from './components/scroll-indicator';
 import { programsComp } from './components/programs';
+import { escenariosComp } from './components/escenarios';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
 
@@ -15,6 +16,7 @@ const components = {
   navigation: navigationComponent,
   'scroll-indicator': scrollIndicator,
   programs: programsComp,
+  scenarios :escenariosComp,
   footer: footerComp,
 };
 

@@ -58,20 +58,21 @@ const pageData = {
       {
         component: 'scenarios',
         title: 'Escenarios que utilizamos',
-        heading: 'Piscina de actividades Sub-acuáticas',
-        text: 'CDPD',
         images: [
           {
-            src: '',
-            alt: 'Piscina',
-          },
-          {
-            src: '',
-            alt: 'Piscina Escuela',
-          },
-          {
-            src: '',
+            src: 'basketball.png',
             alt: 'Basketball',
+            text: 'CDPD',
+          },
+          {
+            src: 'piscinaescuela.png',
+            alt: 'Piscina Escuela',
+            text:'',
+          },
+          {
+            src: 'piscina1.png',
+            alt: 'Piscina',
+            text: 'Piscina de actividades sub&#8211;acuáticas',
           },
         ],
       },
@@ -274,7 +275,7 @@ const pageData = {
             href: '/contact',
           },
         ],
-        socialText: 'Encuentrános en nuestras redes sociales:',
+        socialText: 'Encuéntranos en nuestras redes sociales:',
         socialLinks: [
           {
             href: 'https://www.facebook.com',
