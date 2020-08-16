@@ -36,7 +36,7 @@
     width: 200px;
   }
 
-&__subtitle {
+  &__subtitle {
     font-family: $hkgrotesk-bold;
     font-size: $mobile-title;
     line-height: 1;
@@ -79,7 +79,7 @@
       overflow: hidden;
       width: 246px;
 
-      & img {
+      img {
         height: 100%;
         width: initial;
       }
@@ -91,4 +91,3 @@
     flex-direction: row;
   }
 }
-

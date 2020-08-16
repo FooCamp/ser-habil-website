@@ -15,8 +15,7 @@ const addButtonsListeners = (container) => {
       const containerWidth = container.offsetWidth;
       const isPreviousImage = elementCoordinates.left < 0;
       const isActualImage =
-        elementCoordinates.left > 0 &&
-        elementCoordinates.right < containerWidth;
+        elementCoordinates.left > 0 && elementCoordinates.right < containerWidth;
       let scrollDelta = 0;
 
       if (isActualImage) {
@@ -57,9 +56,7 @@ const createCards = (cardList) => {
 const programsComp = (data) => {
   const cardList = createCards(data.images);
   // contenedor de imagenes
-  const containerCards = newContainer('ul', cardList, [
-    'slider-cards__container',
-  ]);
+  const containerCards = newContainer('ul', cardList, ['slider-cards__container']);
   const slider = newContainer('div', [containerCards], ['slider__container']);
   const text = newText('p', data.text, ['slider__text']);
   const title = newText('h2', data.title, ['slider__title']);
