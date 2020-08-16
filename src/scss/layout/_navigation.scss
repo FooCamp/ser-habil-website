@@ -83,9 +83,9 @@
   }
 
   @include viewport-desktop() {
-&__main {
-  padding-left: 8%;
-}
+    &__main {
+      padding-left: 8%;
+    }
 
     &__overlay-link {
       display: inline-block;
@@ -116,13 +116,14 @@
     }
 
     &__overlay {
-      align-items: end;
-      position: relative;
-      transform: none;
-      justify-content: center;
-      background-color: white;
+      align-items: flex-end;
+      background-color: $white;
+      flex-direction: row;
+      justify-content: flex-end;
       margin-right: 7%;
       padding: 0;
+      position: relative;
+      transform: none;
     }
 
     &__overlay-text {
