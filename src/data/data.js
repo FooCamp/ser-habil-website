@@ -343,15 +343,15 @@ const pageData = {
           },
           {
             text: 'eventos',
-            url: '/events',
+            url: '/events.html',
           },
           {
             text: 'fundación',
-            url: '/foundation',
+            url: '/foundation.html',
           },
           {
             text: 'contacto',
-            url: '/contact',
+            url: '/contact.html',
           },
         ],
         socialMedia: {
