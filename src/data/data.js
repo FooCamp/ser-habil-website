@@ -65,12 +65,12 @@ const pageData = {
             text: 'CDPD',
           },
           {
-            src: 'piscinaescuela.png',
+            src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
             text:'',
           },
           {
-            src: 'piscina1.png',
+            src: 'piscina-1.png',
             alt: 'Piscina',
             text: 'Piscina de actividades sub&#8211;acuáticas',
           },

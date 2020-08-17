@@ -62,7 +62,7 @@
     width: 100%;
 
     &::before {
-      background-image: url('../static/assets/FormaAzul.png');
+      background-image: url('../static/assets/Forma-azul.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       content: '';
@@ -73,9 +73,9 @@
       width: 48%;
       z-index: -1;
     }
-    
+
     &::after {
-      background-image: url('../static/assets/FormaPuntos.png');
+      background-image: url('../static/assets/Forma-puntos.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       bottom: -9%;
