@@ -83,19 +83,23 @@
   }
 
   @include viewport-desktop() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     &__main {
       padding-left: 8%;
     }
 
     &__overlay-link {
+      color: $gray;
       display: inline-block;
       height: 100%;
       margin-right: 36px;
-      color: $gray;
 
       &--active,
       &:hover {
-        color: black;
+        color: $black;
       }
 
       li:last-of-type & {
@@ -103,16 +107,15 @@
       }
     }
 
-    &__overlay-list {
-      display: flex;
-      font-size: $desktop-card-titles;
-      font-family: $hkgrotesk-bold;
+    &__image {
+      height: 92.2px;
+      width: 229px;
     }
 
-    & {
+    &__overlay-list {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      font-family: $hkgrotesk-bold;
+      font-size: $desktop-card-titles;
     }
 
     &__overlay {
