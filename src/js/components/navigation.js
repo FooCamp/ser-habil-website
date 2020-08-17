@@ -1,9 +1,15 @@
 import { newContainer, newMultimedia, newText } from './helpers';
 
 const renderLinks = (links, type) => {
+  const iconClass = type === 'image' ? ['nav__overlay-link', 'nav__overlay-link--image'] : ['nav__overlay-link'];
   const linkNodes = links.map((link) => {
-    const menuLink = newContainer('a', [], ['nav__overlay-link']);
+    const menuLink = newContainer('a', [], iconClass);
     menuLink.href = link.url;
+
+    const location = `/${window.location.href.split('#')[0].split('/').pop()}` || '/';
+    if (location === link.url) {
+      menuLink.classList.add('nav__overlay-link--active');
+    }
 
     if (type === 'image') {
       const icon = newMultimedia('img', link.image);

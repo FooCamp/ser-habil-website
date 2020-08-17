@@ -51,7 +51,6 @@
     transform: translateY(0);
   }
 
-
   &__overlay-list {
     color: $white;
     font-family: $hkgrotesk-bold;
@@ -65,7 +64,10 @@
     display: inline-block;
     height: 30px;
     margin-right: 40px;
-    width: 30px;
+
+    &--image {
+      width: 30px;
+    }
   }
 
   &__overlay-text {
@@ -78,5 +80,65 @@
   &__overlay-social {
     align-items: flex-start;
     display: flex;
+  }
+
+  @include viewport-desktop() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__main {
+      padding-left: 8%;
+    }
+
+    &__overlay-link {
+      color: $gray;
+      display: inline-block;
+      height: 100%;
+      margin-right: 36px;
+
+      &--active,
+      &:hover {
+        color: $black;
+      }
+
+      li:last-of-type & {
+        margin-right: 0;
+      }
+    }
+
+    &__image {
+      height: 92.2px;
+      width: 229px;
+    }
+
+    &__overlay-list {
+      display: flex;
+      font-family: $hkgrotesk-bold;
+      font-size: $desktop-card-titles;
+    }
+
+    &__overlay {
+      align-items: flex-end;
+      background-color: $white;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 7%;
+      padding: 0;
+      position: relative;
+      transform: none;
+    }
+
+    &__overlay-text {
+      display: none;
+    }
+
+    &__overlay-social {
+      display: none;
+    }
+
+    &__icon {
+      display: none;
+    }
   }
 }
