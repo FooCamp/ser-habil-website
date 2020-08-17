@@ -16,7 +16,7 @@ const createImages = (dataImages) => {
 };
 
 const scenariosComp = (data) => {
-  const mainTitle = newText('h1', data.title, ['scenarios__title']);
+  const mainTitle = newText('h3', data.title, ['scenarios__title']);
   const imagesScenarios = createImages(data.images);
   const principalContainer = newContainer(
     'div',
