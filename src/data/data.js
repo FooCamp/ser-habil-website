@@ -4,15 +4,14 @@ const pageData = {
       {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'playing.jpg',
             alt: 'playground',
           },
           {
-            src: '',
+            src: 'childs.png',
             alt: 'kids',
           },
         ],
