@@ -60,6 +60,7 @@
     height: auto;
     position: relative;
     width: 100%;
+
     &::before {
       background-image: url('../static/assets/FormaAzul.png');
       background-repeat: no-repeat;
@@ -72,6 +73,7 @@
       width: 48%;
       z-index: -1;
     }
+    
     &::after {
       background-image: url('../static/assets/FormaPuntos.png');
       background-repeat: no-repeat;
