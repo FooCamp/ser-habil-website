@@ -4,7 +4,8 @@ const pageData = {
       {
         component: 'hero',
         title: '¡Hola! Esto es Ser Hábil',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
             src: 'playing.jpg',
@@ -107,12 +108,14 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         aditionalTexts: [
           {
-            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-            bold: true
+            text:
+              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
+            bold: true,
           },
           {
-            text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-            bold: false
+            text:
+              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+            bold: false,
           },
         ],
         images: [
@@ -131,8 +134,8 @@ const pageData = {
         image: {
           src: '',
           alt: '',
-        }
-      }
+        },
+      },
     ],
   },
   contact: {
@@ -163,7 +166,7 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        component: 'contactForm'
+        component: 'contactForm',
         // TODO: complete info contact form
       },
       {
@@ -175,24 +178,20 @@ const pageData = {
         title: 'Ponte en contacto con nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        [
+        contactInfo: [
           {
             label: 'Dirección',
-            texts: [
-              'Carrera 52 No. 67A-15',
-              'Torre C, Piso 7, Ruta N',
-              'Medellín, Colombia',
-            ],
+            texts: ['Carrera 52 No. 67A-15', 'Torre C, Piso 7, Ruta N', 'Medellín, Colombia'],
           },
           {
             label: 'Teléfono',
-            texts: ['+57 123 456 7890', '+57 123 456 7890']
+            texts: ['+57 123 456 7890', '+57 123 456 7890'],
           },
           {
             label: 'Correo electrónico',
-            texts: ['hola@serhabil.com', 'hola@serhabil.com']
-          }
-        ]
+            texts: ['hola@serhabil.com', 'hola@serhabil.com'],
+          },
+        ],
       },
     ],
   },
@@ -220,11 +219,11 @@ const pageData = {
         ],
         buttonInfo: {
           text: 'Registrarme',
-          link: ''
-        }
+          link: '',
+        },
       },
       {
-        component: 'events',
+        component: 'eventsList',
         events: [
           {
             component: 'event',
@@ -248,8 +247,8 @@ const pageData = {
             ],
             buttonInfo: {
               text: 'Registrarme',
-              link: ''
-            }
+              link: '',
+            },
           },
           {
             component: 'event',
@@ -273,8 +272,8 @@ const pageData = {
             ],
             buttonInfo: {
               text: 'Registrarme',
-              link: ''
-            }
+              link: '',
+            },
           },
           {
             component: 'event',
@@ -285,8 +284,8 @@ const pageData = {
             moreInfo: [],
             buttonInfo: {
               text: 'Registrarme',
-              link: ''
-            }
+              link: '',
+            },
           },
           {
             component: 'event',
@@ -302,8 +301,8 @@ const pageData = {
             ],
             buttonInfo: {
               text: 'Registrarme',
-              link: ''
-            }
+              link: '',
+            },
           },
         ],
       },
@@ -422,5 +421,4 @@ const pageData = {
   },
 };
 
-// eslint-disable-next-line import/prefer-default-export
 export { pageData };
