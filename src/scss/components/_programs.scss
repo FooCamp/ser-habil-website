@@ -34,7 +34,17 @@
     display: flex;
     overflow-y: hidden;
     position: relative;
+    scrollbar-width: none;
     width: 100%;
+
+    & :focus {
+      outline: solid 1px $orange;
+    }
+
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+    }
   }
 
   &-card {
