@@ -1,10 +1,12 @@
-.escenarios {
-  background-image: url('../static/assets/FormaAzul.png');
-  background-position-x: 120px;
-  background-position-y: 170px;
-  background-repeat: no-repeat;
-  background-size: 108px  108px;
+.scenarios {
+  $main: &;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 230px;
+  padding-top: 30px;
   position: relative;
+  width: 100%;
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -19,18 +21,19 @@
   }
 
   &__principal-container {
-    background-image: url('../static/assets/FormaPuntos.png');
-    background-position-x: 264px;
-    background-position-y: 437px;
-    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    position: relative;
   }
 
   &__container-images {
     display: flex;
     flex-direction: column;
-    margin-left: 29px;
-    margin-right: 29px;
-    width: 100%;
+    position: relative;
   }
 
   &__text {
@@ -41,29 +44,60 @@
   }
 
   &__images--0 {
+    display: flex;
     height: auto;
-    margin-top: -70px;
     position: absolute;
-    right: 0;
+    right: 60px;
     text-align: right;
-    width: 150px;
+    top: -70px;
+    width: 33%;
+    z-index: 1;
   }
 
   &__images--1 {
+    display: flex;
+    flex-direction: column;
     height: auto;
-    margin-left: 65px;
-    margin-right: 63px;
-    width: 247px;
+    position: relative;
+    width: 100%;
+    &::before {
+      background-image: url('../static/assets/FormaAzul.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      content: '';
+      height: 26%;
+      left: 23%;
+      position: absolute;
+      top: 13px;
+      width: 48%;
+      z-index: -1;
+    }
+    &::after {
+      background-image: url('../static/assets/FormaPuntos.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      bottom: -9%;
+      content: '';
+      height: 9%;
+      position: absolute;
+      right: -3px;
+      text-align: right;
+      width: 23%;
+    }
   }
 
   &__images--2 {
     display: flex;
     flex-direction: column-reverse;
     height: auto;
-    margin-left: 29px;
-    margin-top: -50px;
+    left: 15%;
+    position: absolute;
     text-align: left;
-    width: 150px;
+    top: 90%;
+    width: 33%;
 
+    #{$main}__text {
+      width: 200px;
+    }
   }
 }
