@@ -47,9 +47,9 @@
     display: flex;
     height: auto;
     position: absolute;
-    right: 38px;
+    right: 32px;
     text-align: right;
-    top: -65px;
+    top: -89px;
     width: 40%;
     z-index: 1;
   }
@@ -59,6 +59,7 @@
     flex-direction: column;
     height: auto;
     position: relative;
+    text-align: left;
     width: 100%;
 
     &::before {
@@ -67,7 +68,7 @@
       background-size: 100% 100%;
       content: '';
       height: 26%;
-      left: 23%;
+      left: 22%;
       position: absolute;
       top: 13px;
       width: 48%;
@@ -95,7 +96,7 @@
     left: 8%;
     position: absolute;
     text-align: left;
-    top: 90%;
+    top: 88%;
     width: 40%;
 
     #{$main}__text {
