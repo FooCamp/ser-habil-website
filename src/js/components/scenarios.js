@@ -8,7 +8,7 @@ const createImages = (dataImages) => {
     const containerImages = newContainer(
       'div',
       [textScenarios, imagesScenarios],
-      ['scenarios__container-images', `scenarios__images--${number}`],
+      [ `scenarios__images--${number}`],
     );
     return containerImages;
   });

@@ -1,12 +1,8 @@
 .scenarios {
-  $main: &;
 
-  display: flex;
-  flex-direction: column;
   padding-bottom: 230px;
   padding-top: 30px;
-  position: relative;
-  width: 100%;
+
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -21,18 +17,8 @@
   }
 
   &__principal-container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    margin: auto;
-    padding-left: 65PX;
-    padding-right: 63PX;
-    position: relative;
-  }
-
-  &__container-images {
-    display: flex;
-    flex-direction: column;
+    padding-left: 65px;
+    padding-right: 63px;
     position: relative;
   }
 
@@ -44,8 +30,6 @@
   }
 
   &__images--0 {
-    display: flex;
-    height: auto;
     position: absolute;
     right: 32px;
     text-align: right;
@@ -55,12 +39,8 @@
   }
 
   &__images--1 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
     position: relative;
-    text-align: left;
-    width: 100%;
+
 
     &::before {
       background-image: url('../static/assets/forma-azul.png');
@@ -92,14 +72,12 @@
   &__images--2 {
     display: flex;
     flex-direction: column-reverse;
-    height: auto;
     left: 8%;
     position: absolute;
-    text-align: left;
     top: 88%;
     width: 40%;
 
-    #{$main}__text {
+    .scenarios__text {
       width: 200px;
     }
   }
