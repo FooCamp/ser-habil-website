@@ -1,4 +1,4 @@
-import { newText, newContainer, newMultimedia, newLink } from './helpers';
+import { newText, newContainer, newMultimedia, } from './helpers';
 
 let currentCard = 0;
 let cardList;
