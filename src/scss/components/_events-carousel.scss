@@ -98,9 +98,10 @@
   @include viewport-desktop() {
     & {
       background-image: url('../static/assets/forma-3.png');
-      background-position-x: 1000px;
+      background-position-x: 750px;
       background-position-y: 335px;
       background-size: 300px;
+      max-width: 1400px;
     }
 
     &__title {
