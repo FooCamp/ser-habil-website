@@ -39,6 +39,9 @@
   &__images--1 {
     position: relative;
 
+    .scenarios__text {
+      word-spacing: 10px;
+    }
     &::before {
       background-image: url('../static/assets/forma-azul.png');
       background-repeat: no-repeat;
@@ -76,6 +79,90 @@
 
     .scenarios__text {
       width: 200px;
+    }
+  }
+
+  @include viewport-desktop() {
+    padding-bottom: 290px;
+    padding-top: 80px;
+
+    &__title {
+      font-size: $desktop-titles;
+      height: 136px;
+      line-height: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 464px;
+    }
+
+    &__principal-container {
+      padding-left: 572px;
+      padding-right: 420px;
+      position: relative;
+    }
+
+    &__text {
+      font-size: 22px;
+      margin-bottom: 12px;
+      margin-top: 17px;
+    }
+
+    &__images--0 {
+      height: 360px;
+      position: absolute;
+      right: 249px;
+      text-align: right;
+      top: -21px;
+      width: 320px;
+
+      &::after {
+        background-image: url('../static/assets/forma-puntos.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        bottom: -16%;
+        content: '';
+        height: 17%;
+        position: absolute;
+        right: -42px;
+        text-align: right;
+        width: 34%;
+      }
+    }
+
+    &__images--1 {
+      display: flex;
+      flex-direction: column-reverse;
+      position: relative;
+      width: 92%;
+
+      &::before {
+        background-image: url('../static/assets/forma-azul.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        content: '';
+        height: 34%;
+        left: -42%;
+        position: absolute;
+        top: 50px;
+        width: 50%;
+        z-index: -1;
+      }
+      &::after {
+        background-image: none;
+      }
+    }
+
+    &__images--2 {
+      height: 360px;
+      left: 17%;
+      position: absolute;
+      top: 43%;
+      width: 360px;
+
+      .scenarios__text {
+        width: 290px;
+      }
     }
   }
 }
