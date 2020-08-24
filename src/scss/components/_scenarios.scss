@@ -39,9 +39,6 @@
   &__images--1 {
     position: relative;
 
-    .scenarios__text {
-      word-spacing: 10px;
-    }
     &::before {
       background-image: url('../static/assets/forma-azul.png');
       background-repeat: no-repeat;
