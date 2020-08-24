@@ -59,11 +59,14 @@
       flex-direction: row;
       margin-bottom: 92px;
       background-image: url('../static/assets/formas-desktop.svg');
-      background-position-x: 29px;
+      background-position-x: 1px;
       background-position-y: 54px;
       background-repeat: no-repeat;
       background-size: 853px;
       align-items: center;
+      max-width: 1440px;
+      margin-left: 200px;
+
 
     &__container-general {
       display: flex;
@@ -75,6 +78,7 @@
       display: flex;
       flex-direction: column;
       text-align: inherit;
+      margin-left: 100px;
     }
 
     &__image--0 {
@@ -86,8 +90,8 @@
 
     &__image--1 {
       height: 520px;
-      margin-top: 99px;
-      margin-left: 100px;
+      margin-top: 95px;
+      margin-left: 35px;
       width: 420px;
     }
 
