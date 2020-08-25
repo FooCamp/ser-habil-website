@@ -31,8 +31,18 @@ const footerComp = (data) => {
   const items = newContainer('ul', listLink, ['footer__items']);
   const socialText = newText('p', data.socialText, ['footer__social-text']);
   const socialIcons = createIcons(data.socialLinks);
+  const containerItems = newContainer(
+    'div',
+    [socialText, ...socialIcons],
+    ['footer__container-items'],
+  );
+  const containerElements = newContainer(
+    'div',
+    [items, containerItems],
+    ['footer__container-elements'],
+  );
   linkLogo.appendChild(logoFooter);
-  const footer = newContainer('footer', [linkLogo, items, socialText, ...socialIcons], ['footer']);
+  const footer = newContainer('footer', [linkLogo, containerElements], ['footer']);
 
   return footer;
 };
