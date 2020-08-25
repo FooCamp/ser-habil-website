@@ -43,6 +43,8 @@ const footerComp = (data) => {
   );
   linkLogo.appendChild(logoFooter);
   const footer = newContainer('footer', [linkLogo, containerElements], ['footer']);
+  linkLogo.appendChild(logoFooter);
+  const footer = newContainer('footer', [linkLogo, items, socialText, ...socialIcons], ['footer']);
 
   return footer;
 };
