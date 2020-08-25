@@ -399,7 +399,7 @@ const pageData = {
             href: '/contact',
           },
         ],
-        socialText: 'Encuentrános en nuestras redes sociales:',
+        socialText: 'Encuéntranos en nuestras redes sociales:',
         socialLinks: [
           {
             href: 'https://www.facebook.com',
