@@ -9,6 +9,7 @@
 // 2. Base stuff
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/grid';
 
 // 3.layout
 @import 'layout/navigation';
@@ -19,6 +20,5 @@
 @import 'components/programs';
 @import 'components/intro';
 @import 'components/scenarios';
-@import 'components/events-carousel';
 @import 'components/events-carousel';
 @import 'components/intro';
