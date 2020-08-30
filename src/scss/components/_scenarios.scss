@@ -1,9 +1,7 @@
-* {
-  margin: 0 auto;
-  max-width: 450px;
-}
 .scenarios {
-  padding: 30px 30px 230px;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 30px 60px 230px;
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -86,8 +84,8 @@
   }
 
   @include viewport-desktop() {
-    padding-bottom: 130px;
-    padding-top: 80px;
+    max-width: 450px;
+    padding: 80px 30px 130px;
 
     &__title {
       font-size: $desktop-titles;
