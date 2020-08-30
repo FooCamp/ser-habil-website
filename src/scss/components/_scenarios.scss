@@ -1,6 +1,14 @@
+* {
+  margin: 0 auto;
+  max-width: 450px;
+}
 .scenarios {
   padding-bottom: 230px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 30px;
+
+  @extend .container;
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -15,8 +23,6 @@
   }
 
   &__principal-container {
-    margin-left: 65px;
-    margin-right: 65px;
     position: relative;
   }
 
@@ -29,10 +35,10 @@
 
   &__images--0 {
     position: absolute;
-    right: -37px;
+    right: -35px;
     text-align: right;
     top: -109px;
-    width: 61%;
+    width: 59%;
     z-index: 1;
   }
 
@@ -40,6 +46,8 @@
     position: relative;
 
     .scenarios__text {
+      margin: 0;
+      margin-bottom: 20px;
       width: 120px;
     }
 
@@ -48,11 +56,11 @@
       background-repeat: no-repeat;
       background-size: 100% 100%;
       content: '';
-      height: 25%;
+      height: 27%;
       left: 22%;
       position: absolute;
-      top: -15px;
-      width: 42%;
+      top: -22px;
+      width: 44%;
       z-index: -1;
     }
 
@@ -65,7 +73,6 @@
       height: 8%;
       position: absolute;
       right: -2px;
-      text-align: right;
       width: 20%;
     }
   }
@@ -76,7 +83,7 @@
     flex-direction: column-reverse;
     left: -13%;
     position: absolute;
-    width: 61%;
+    width: 59%;
 
     .scenarios__text {
       width: 200px;
@@ -84,14 +91,15 @@
   }
 
   @include viewport-desktop() {
-    padding-bottom: 290px;
+    padding-bottom: 130px;
     padding-top: 80px;
 
     &__title {
       font-size: $desktop-titles;
       height: 136px;
-      line-height: 60px;
-      margin-left: auto;
+      line-height: 65px;
+      margin-bottom: 68px;
+      margin-left: -37px;
       margin-right: auto;
       text-align: center;
       width: 464px;
@@ -104,26 +112,25 @@
 
     &__text {
       font-size: 22px;
-      margin-bottom: 12px;
+      margin-bottom: 17px;
       margin-top: 17px;
     }
 
     &__images--0 {
-      height: 360px;
-      right: 0%;
+      right: -74%;
       text-align: right;
-      top: -21px;
-      width: 320px;
+      top: -22px;
+      width: 360px;
 
       &::after {
         background-image: url('../static/assets/forma-puntos.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
-        bottom: -16%;
+        bottom: -11%;
         content: '';
-        height: 17%;
+        height: 18%;
         position: absolute;
-        right: -42px;
+        right: -43px;
         text-align: right;
         width: 34%;
       }
@@ -134,9 +141,10 @@
       flex-direction: column-reverse;
       margin-left: auto;
       margin-right: auto;
-      width: 68%;
+      width: 120%;
 
       .scenarios__text {
+        margin-top: 17px;
         width: auto;
       }
 
@@ -145,11 +153,11 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
         content: '';
-        height: 34%;
-        left: -42%;
+        height: 42%;
+        left: -50%;
         position: absolute;
-        top: 50px;
-        width: 50%;
+        top: 27px;
+        width: 59%;
         z-index: -1;
       }
       &::after {
@@ -158,12 +166,14 @@
     }
 
     &__images--2 {
-      bottom: 8%;
+      bottom: 6%;
       height: 360px;
-      left: -29%;
+      left: -82%;
       width: 360px;
 
       .scenarios__text {
+        margin: 0;
+        margin-top: 17px;
         width: 290px;
       }
     }
