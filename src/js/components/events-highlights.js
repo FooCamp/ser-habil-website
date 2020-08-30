@@ -1,5 +1,9 @@
 import { newContainer, newText, newLink, newMultimedia } from './helpers';
 
+/**
+ * @param {array[string]} arrayMoreinfo es un array de string de la data con titulos y textos
+ * esta funcion e devuelve un div con varios divs adentro que en su interior cada uno tiene un titilo y texto
+ */
 const buildMoreInfo = (arrayMoreinfo) => {
   const moreInfoContainer = newContainer('div', [], ['event__more-info']);
   arrayMoreinfo.forEach((element) => {
