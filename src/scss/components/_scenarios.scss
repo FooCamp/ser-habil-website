@@ -3,12 +3,8 @@
   max-width: 450px;
 }
 .scenarios {
-  padding-bottom: 230px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 30px;
+  padding: 30px 30px 30px 230px;
 
-  @extend .container;
 
   &__title {
     font-family: $hkgrotesk-bold;
