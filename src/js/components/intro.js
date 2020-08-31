@@ -25,7 +25,7 @@ const componentIntro = (data) => {
   // eslint-disable-next-line prettier/prettier
   const containerText = newContainer('div', [title, paragraph], ['intro__container-text']);
   const containerGeneral = newContainer('div', [...imageIntro,], ['intro__container-general']);
-  const section = newContainer('section', [containerGeneral, containerText], ['intro']);
+  const section = newContainer('section', [containerGeneral, containerText], ['intro','container']);
 
   return section;
 };
