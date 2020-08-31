@@ -1,0 +1,43 @@
+.contactUs {
+  @extend .container;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 19px;
+  padding-right: 19px;
+
+  &__title {
+    display: flex;
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  &__paragraph {
+    color: $gray;
+    display: flex;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  &__label {
+    font-family: $hkgrotesk-bold;
+    font-size: $desktop-card-titles;
+    padding-bottom: 10px;
+  }
+
+  &__text {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    padding-bottom: 50px;
+    width: 162px;
+
+    &:last-of-type {
+      margin-bottom: 30px;
+    }
+  }
+}
