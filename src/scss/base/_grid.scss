@@ -1,5 +1,8 @@
-.grid-mobile {
-  grid-gap: 20px;
-  grid-template-columns: repeat(8, 1fr);
-  max-width: 375px;
+.container {
+  margin: 0 30px;
+  max-width: 1175px;
+
+  @include viewport-desktop {
+    margin: 0 auto;
+  }
 }
