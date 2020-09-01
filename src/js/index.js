@@ -8,6 +8,7 @@ import { scenariosComp } from './components/scenarios';
 import { eventsCarousel } from './components/events-carousel';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
+import { imageComponet } from './components/imageFundacion';
 
 /**
  * Component map
@@ -22,6 +23,7 @@ const components = {
   scenarios: scenariosComp,
   events: eventsCarousel,
   footer: footerComp,
+  imagenFundation: imageComponet,
 };
 
 const getCurrentPage = () => {

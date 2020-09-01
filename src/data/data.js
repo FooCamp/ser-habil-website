@@ -67,7 +67,7 @@ const pageData = {
           {
             src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
-            text:'Piscina<br>Escuela 1',
+            text: 'Piscina<br>Escuela 1',
           },
           {
             src: 'piscina-1.png',
@@ -325,6 +325,11 @@ const pageData = {
         text3:
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
         bottomImage: '',
+      },
+      {
+        component: 'imagenFundation',
+        src: 'foto-fundacion.jpg',
+        alt: 'niños abrazandoce',
       },
     ],
   },
