@@ -37,7 +37,7 @@
     scrollbar-width: none;
     width: 100%;
 
-    & :focus {
+    &:focus {
       outline: solid 1px $orange;
     }
 
