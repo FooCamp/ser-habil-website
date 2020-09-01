@@ -207,7 +207,7 @@ const pageData = {
           alt: 'event image',
         },
         text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor\n incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         moreInfo: [
           {
             text: 'Fecha:',

@@ -28,7 +28,12 @@ const eventsComponent = (data) => {
   const sectionClasses = data.featured ? ['container', 'event', 'feature'] : ['container', 'event'];
   const wrapergeneral = newContainer('div', [eventImage, title, text, moreInfo], ['event__wraper']);
   const wraperImageGeneral = newContainer('div', [wrapergeneral], ['event__wraper-image']);
-  const section = newContainer('section', [wraperImageGeneral, wraperLink], sectionClasses);
+  const wraperimage = newContainer('div', [], ['event__decoration']);
+  const section = newContainer(
+    'section',
+    [wraperimage, wraperImageGeneral, wraperLink],
+    sectionClasses,
+  );
 
   return section;
 };
