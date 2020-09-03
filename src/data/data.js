@@ -72,7 +72,7 @@ const pageData = {
           {
             src: 'piscina-1.png',
             alt: 'Piscina',
-            text: 'Piscina de actividades sub&#8211;acuáticas',
+            text: 'Piscina de actividades<br>sub&#8211;acuáticas',
           },
         ],
       },
