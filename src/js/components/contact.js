@@ -11,8 +11,8 @@ import { newText, newContainer } from './helpers';
 const nodeInformation = (informationArray) => {
   const containerInformation = newContainer('div', [], ['contactUs__container-Information']);
   informationArray.forEach((item) => {
-    const title = newText('h3', item.label, ['contactUs__label']);
-    const paragraph = newText('p', item.texts, ['contactUs__text']);
+    const title = newText('h3', item.label, ['contact__label']);
+    const paragraph = newText('p', item.texts, ['contact__text']);
     containerInformation.appendChild(title);
     containerInformation.appendChild(paragraph);
   });
@@ -27,10 +27,10 @@ const nodeInformation = (informationArray) => {
  */
 
 const componentContactUs = (data) => {
-  const title = newText('h2', data.title, ['contactUs__title']);
-  const paragraph = newText('p', data.text, ['contactUs__paragraph']);
+  const title = newText('h2', data.title, ['contact__title']);
+  const paragraph = newText('p', data.text, ['contact__paragraph']);
   const informationList = nodeInformation(data.contactInfo);
-  const section = newContainer('section', [title, paragraph, informationList], ['contactUs']);
+  const section = newContainer('section', [title, paragraph, informationList], ['contact']);
 
   return section;
 };
