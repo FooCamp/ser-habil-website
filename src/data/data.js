@@ -67,7 +67,7 @@ const pageData = {
           {
             src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
-            text:'Piscina<br>Escuela 1',
+            text: 'Piscina<br>Escuela 1',
           },
           {
             src: 'piscina-1.png',
