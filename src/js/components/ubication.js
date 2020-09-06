@@ -5,15 +5,11 @@ const createrMapComponen = (data) => {
   ubication.src = data.iframe.src;
   ubication.frameborder = '0';
   ubication.allowfullscreen = 'true';
-  ubication.height = '450px';
-  ubication.width = '100%';
 
-  const backgroundPictura = newContainer(
-    'div',
-    [ubication],
-    ['map-section__container', 'container'],
-  );
-  const section = newContainer('section', [backgroundPictura], ['map-section']);
+  const backgroundPictura = newContainer('div', [ubication], ['map-section__container']);
+  const pictureTop = newContainer('div', [backgroundPictura], ['map-section__pictureTop']);
+  const pictureButton = newContainer('div', [pictureTop], ['map-section__pictureBotton']);
+  const section = newContainer('section', [pictureButton], ['map-section']);
 
   return section;
 };
