@@ -25,7 +25,9 @@ const eventsComponent = (data) => {
   link.target = '_blank';
   link.rel = 'noopener';
   const wraperLink = newContainer('div', [link], ['event__link']);
-  const sectionClasses = data.featured ? ['container', 'event', 'feature'] : ['container', 'event'];
+  const sectionClasses = data.featured
+    ? ['container', 'event', 'event__feature']
+    : ['container', 'event'];
   const wrapergeneral = newContainer('div', [eventImage, title, text, moreInfo], ['event__wraper']);
   const wraperImageGeneral = newContainer('div', [wrapergeneral], ['event__wraper-image']);
   const wraperimage = newContainer('div', [], ['event__decoration']);
