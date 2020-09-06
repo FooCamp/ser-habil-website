@@ -23,7 +23,7 @@ const scenariosComp = (data) => {
     [...imagesScenarios],
     ['scenarios__principal-container'],
   );
-  const section = newContainer('section', [mainTitle, principalContainer], ['scenarios']);
+  const section = newContainer('section', [mainTitle, principalContainer], ['container','scenarios']);
 
   return section;
 };
