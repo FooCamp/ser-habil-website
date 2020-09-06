@@ -210,15 +210,15 @@ const pageData = {
           'Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor\n incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         moreInfo: [
           {
-            text: 'Fecha:',
+            text: 'Fecha',
             description: 'Febrero, 12, 2020',
           },
           {
-            text: 'Hora:',
+            text: 'Hora',
             description: '3:30 p.m.',
           },
           {
-            text: 'Lugar:',
+            text: 'Lugar',
             description: 'Fundación Ser Hábil, sala 3',
           },
         ],

@@ -7,7 +7,8 @@ import { newContainer, newText, newLink, newMultimedia } from './helpers';
 const buildMoreInfo = (arrayMoreinfo) => {
   const moreInfoContainer = newContainer('div', [], ['event__more-info']);
   arrayMoreinfo.forEach((element) => {
-    const title = newText('h3', element.text, ['more-info__text']);
+    const texTitle = element.text + ':';
+    const title = newText('h3', texTitle, ['more-info__text']);
     const text = newText('p', element.description, ['more-info__description']);
     const wraper = newContainer('div', [title, text], ['more-info__wraper']);
     moreInfoContainer.appendChild(wraper);
@@ -24,7 +25,6 @@ const eventsComponent = (data) => {
   link.target = '_blank';
   link.rel = 'noopener';
   const wraperLink = newContainer('div', [link], ['event__link']);
-  console.log(data.buttonInfo.text);
   const sectionClasses = data.featured ? ['container', 'event', 'feature'] : ['container', 'event'];
   const wrapergeneral = newContainer('div', [eventImage, title, text, moreInfo], ['event__wraper']);
   const wraperImageGeneral = newContainer('div', [wrapergeneral], ['event__wraper-image']);
