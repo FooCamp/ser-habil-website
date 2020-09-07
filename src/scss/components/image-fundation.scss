@@ -15,10 +15,9 @@
     width: 100%;
 
     img {
-      height: 100%;
       min-height: 510px;
       min-width: 800px;
-      width: 100%;
+      object-fit: cover;
     }
   }
 
@@ -26,9 +25,9 @@
     background-image: url('../static/assets/Forma2-desktop-image-fundation.png');
     background-position-y: 89.5%;
     display: flex;
-    height: 800px;
     margin: 0 30px;
     margin-bottom: 91px;
+    max-width: 1400px;
 
     &__container {
       background-image: url('../static/assets/Forma1-desktop-imge-fundation.png');
