@@ -67,12 +67,12 @@ const pageData = {
           {
             src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
-            text: 'Piscina<br>Escuela 1',
+            text: 'Piscina Escuela 1',
           },
           {
             src: 'piscina-1.png',
             alt: 'Piscina',
-            text: 'Piscina de actividades sub&#8211;acuáticas',
+            text: 'Piscina de actividades<br>sub&#8211;acuáticas',
           },
         ],
       },
