@@ -10,22 +10,22 @@
 
   &__picture {
     display: flex;
+    height: 510px;
     justify-content: center;
     overflow: hidden;
     width: 100%;
 
     img {
-      min-height: 510px;
-      min-width: 800px;
+      height: 100%;
       object-fit: cover;
+      width: 100%;
     }
   }
 
   @include viewport-desktop() {
     background-image: url('../static/assets/Forma2-desktop-image-fundation.png');
     background-position-y: 89.5%;
-    display: flex;
-    margin: 0 30px;
+    margin: 0 auto;
     margin-bottom: 91px;
     max-width: 1400px;
 
@@ -42,7 +42,7 @@
       margin-top: 53.1px;
 
       img {
-        max-height: 620px;
+        height: 620px;
         max-width: 1176px;
       }
     }
