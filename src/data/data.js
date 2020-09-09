@@ -186,11 +186,11 @@ const pageData = {
           },
           {
             label: 'Teléfono:',
-            texts: ['+57 4 604 5535' + '  +57 4 604 5535'],
+            texts: ['+57 4 604 5535', '+57 4 604 5535'],
           },
           {
             label: 'Correo electrónico:',
-            texts: ['hola@serhabil.com' + '  hola@serhabil.com'],
+            texts: ['hola@serhabil.com', 'hola@serhabil.com'],
           },
         ],
       },

@@ -1,5 +1,4 @@
 .contact {
-  @extend .container;
   padding-left: 19px;
   padding-right: 19px;
 
@@ -24,15 +23,17 @@
     margin-bottom: 10px;
   }
 
-  &__text {
+  &__texts {
     color: $gray;
     font-family: $hkgrotesk-regular;
     font-size: $mobile-paragraph;
-    padding-bottom: 50px;
-    //width: 162px;
+  }
 
-    &:last-of-type {
-      margin-bottom: 40px;
+  &__information-texts {
+    margin-bottom: 50px;
+
+    &--2 {
+      padding-bottom: 40px;
     }
   }
 }
