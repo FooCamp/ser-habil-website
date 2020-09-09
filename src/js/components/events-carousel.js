@@ -81,7 +81,7 @@ const eventsCarousel = (data) => {
   const subtitleContainer = newContainer ('h3', subtitles, ['carousel__subtitle']);
 
   const text = newText('p', data.text, ['carousel__text']);
-  const section = newContainer('section', [title, carousel, subtitleContainer, text], ['carousel']);
+  const section = newContainer('section', [title, carousel, subtitleContainer, text], ['carousel', 'container']);
 
   return section;
 };
