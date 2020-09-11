@@ -67,7 +67,7 @@ const pageData = {
           {
             src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
-            text: 'Piscina Escuela 1',
+            text: 'Piscina<br>Escuela 1',
           },
           {
             src: 'piscina-1.png',
@@ -201,12 +201,16 @@ const pageData = {
       {
         component: 'featuredEvent',
         title: 'Dia de campo',
-        image: '',
+        featured: true,
+        image: {
+          src: 'eventImage.jpg',
+          alt: 'event image',
+        },
         text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor\n incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         moreInfo: [
           {
-            text: 'fecha',
+            text: 'Fecha',
             description: 'Febrero, 12, 2020',
           },
           {
@@ -214,13 +218,13 @@ const pageData = {
             description: '3:30 p.m.',
           },
           {
-            text: 'place',
+            text: 'Lugar',
             description: 'Fundación Ser Hábil, sala 3',
           },
         ],
         buttonInfo: {
           text: 'Registrarme',
-          link: '',
+          link: 'https://docs.google.com/forms/u/0/',
         },
       },
       {
@@ -229,7 +233,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'eventImage.jpg',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [
@@ -254,7 +261,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'eventImage.jpg',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [
@@ -279,7 +289,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'eventImage.jpg',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [],
@@ -291,7 +304,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'eventImage.jpg',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [

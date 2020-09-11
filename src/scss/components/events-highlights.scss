@@ -1,0 +1,97 @@
+.event {
+  $root: &;
+  margin: 0 auto 80px;
+  max-width: 550px;
+
+  &__wraper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 49px;
+  }
+
+  &.event__feature {
+    padding-bottom: 100px;
+
+    #{$root}__decoration {
+      background-image: url('../static/assets/evnet-forma.png');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      bottom: -21.5%;
+      height: 17%;
+      position: absolute;
+      right: 0;
+      width: 20%;
+      z-index: -1;
+    }
+
+    #{$root}__title {
+      font-size: $mobile-title;
+      order: -1;
+    }
+  }
+
+  &__title {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-card-titles;
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    line-height: 1.3;
+    margin-bottom: 40px;
+  }
+
+  &__more-info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 19px;
+
+    .more-info {
+      &__text {
+        font-family: $hkgrotesk-bold;
+        font-size: $mobile-card-titles;
+        width: 56px;
+      }
+
+      &__description {
+        color: $gray;
+        font-family: $hkgrotesk-regular;
+        font-size: $mobile-paragraph;
+        margin-left: 12px;
+      }
+
+      &__wraper {
+        display: flex;
+        padding-bottom: 19px;
+        width: 250px;
+      }
+    }
+  }
+
+  &__link {
+    background-color: $green;
+    display: block;
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-card-titles;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    width: 85%;
+
+    a {
+      color: $black;
+      display: block;
+      max-width: 100%;
+      padding: 21px 0;
+    }
+  }
+}
