@@ -4,6 +4,7 @@
   background-position-y: 254px;
   background-repeat: no-repeat;
 
+
   &__container-general {
     align-items: center;
     background-image: url('../static/assets/orange-form.png');
@@ -33,22 +34,18 @@
   &__title {
     font-family: $hkgrotesk-bold;
     font-size: $mobile-title;
-    height: 90px;
-    margin-left: 198px;
-    margin-right: 53px;
-    margin-top: 24px;
-    width: 124px;
+    margin-left: 51vw;
+    margin-top: 8vw;
+    width: 33vw;
   }
 
   &__paragraph {
     color: $gray;
     font-family: $hkgrotesk-regular;
     font-size: $mobile-paragraph;
-    height: 88px;
-    margin-left: 49px;
-    margin-right: 49px;
-    margin-top: 27px;
-    width: 270px;
+    margin-left: 11vw;
+    margin-top: 8vw;
+    width: 70vw;
   }
 
   @include viewport-desktop() {
@@ -60,7 +57,7 @@
       background-size: 853px;
       display: flex;
       flex-direction: row;
-      margin: auto;
+      margin: auto 30px;
       margin-bottom: 92px;
 
 
