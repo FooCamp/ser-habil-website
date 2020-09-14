@@ -7,8 +7,8 @@ const createrMapComponen = (data) => {
   ubication.allowfullscreen = 'true';
 
   const backgroundPictura = newContainer('div', [ubication], ['map-section__container']);
-  const pictureTop = newContainer('div', [backgroundPictura], ['map-section__pictureTop']);
-  const pictureButton = newContainer('div', [pictureTop], ['map-section__pictureBotton']);
+  const pictureTop = newContainer('div', [backgroundPictura], ['map-section__picture-Top']);
+  const pictureButton = newContainer('div', [pictureTop], ['map-section__picture-Botton']);
   const section = newContainer('section', [pictureButton], ['map-section']);
 
   return section;
