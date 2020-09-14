@@ -185,15 +185,15 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         contactInfo: [
           {
-            label: 'Dirección',
+            label: 'Dirección:',
             texts: ['Carrera 52 No. 67A-15', 'Torre C, Piso 7, Ruta N', 'Medellín, Colombia'],
           },
           {
-            label: 'Teléfono',
-            texts: ['+57 123 456 7890', '+57 123 456 7890'],
+            label: 'Teléfono:',
+            texts: ['+57 4 604 5535', '+57 4 604 5535'],
           },
           {
-            label: 'Correo electrónico',
+            label: 'Correo electrónico:',
             texts: ['hola@serhabil.com', 'hola@serhabil.com'],
           },
         ],

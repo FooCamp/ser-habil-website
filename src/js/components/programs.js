@@ -61,7 +61,8 @@ const programsComp = (data) => {
   const text = newText('p', data.text, ['slider__text']);
   const title = newText('h2', data.title, ['slider__title']);
   // contenedor principal
-  const section = newContainer('section', [title, text, slider], ['slider']);
+  const containerImage = newContainer('div', [title, text, slider], ['slider__wraper']);
+  const section = newContainer('section', [containerImage], ['slider']);
   section.id = 'scroll';
   addButtonsListeners(containerCards);
 
