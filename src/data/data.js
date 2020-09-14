@@ -342,6 +342,11 @@ const pageData = {
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
         bottomImage: '',
       },
+      {
+        component: 'imagenFundation',
+        src: 'foto-fundacion.jpg',
+        alt: 'niños abrazandoce',
+      },
     ],
   },
   common: {

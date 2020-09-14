@@ -1,0 +1,50 @@
+.image-fundation {
+  background-image: url('../static/assets/Forma-image-fundation.png');
+  background-position-x: 100%;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 54.2px;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 8.2%;
+
+  &__picture {
+    display: flex;
+    height: 510px;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+
+    img {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @include viewport-desktop() {
+    background-image: url('../static/assets/Forma2-desktop-image-fundation.png');
+    background-position-y: 89.5%;
+    margin: 0 auto;
+    margin-bottom: 91px;
+    max-width: 1400px;
+
+    &__container {
+      background-image: url('../static/assets/Forma1-desktop-imge-fundation.png');
+      background-position-x: 5px;
+      background-position-y: 1px;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__picture {
+      margin-top: 53.1px;
+
+      img {
+        height: 620px;
+        max-width: 1176px;
+      }
+    }
+  }
+}
