@@ -9,6 +9,7 @@ import { eventsCarousel } from './components/events-carousel';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
 import { imageComponet } from './components/image-fundacion';
+import { eventsComponent } from './components/events-highlights';
 
 /**
  * Component map
@@ -24,6 +25,7 @@ const components = {
   events: eventsCarousel,
   footer: footerComp,
   imagenFundation: imageComponet,
+  featuredEvent: eventsComponent,
 };
 
 const getCurrentPage = () => {
