@@ -80,7 +80,7 @@ const pageData = {
         component: 'events',
         title: 'Evento Destacado',
         subtitle: 'Catalina López Campeona nacional de natación',
-        url: 'events.html',
+        url: 'events',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
@@ -97,45 +97,6 @@ const pageData = {
             alt: 'Catalita',
           },
         ],
-      },
-    ],
-  },
-  about: {
-    sections: [
-      {
-        component: 'hero',
-        title: 'Unete a nosotros',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        aditionalTexts: [
-          {
-            text:
-              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-            bold: true,
-          },
-          {
-            text:
-              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-            bold: false,
-          },
-        ],
-        images: [
-          {
-            src: '',
-            alt: '',
-          },
-          {
-            src: '',
-            alt: '',
-          },
-        ],
-      },
-      {
-        component: 'imageComponent',
-        image: {
-          src: '',
-          alt: '',
-        },
       },
     ],
   },
@@ -332,19 +293,31 @@ const pageData = {
   foundation: {
     sections: [
       {
-        component: 'fundacion',
-        hero: {
-          image1: '',
-          image2: '',
-          title: 'Acerca de la fundación',
-        },
-        text1:
+        component: 'hero',
+        title: 'Unete a nosotros',
+        text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        text2:
+        images: [
+          {
+            src: 'playing.jpg',
+            alt: 'playground',
+          },
+          {
+            src: 'childs.png',
+            alt: 'kids',
+          },
+        ],
+        texts: [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-        text3:
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-        bottomImage: '',
+        ],
+      },
+      {
+        component: 'imageComponent',
+        image: {
+          src: '',
+          alt: '',
+        },
       },
       {
         component: 'imagenFundation',
@@ -369,15 +342,15 @@ const pageData = {
           },
           {
             text: 'eventos',
-            url: '/events.html',
+            url: '/events',
           },
           {
             text: 'fundación',
-            url: '/foundation.html',
+            url: '/foundation',
           },
           {
             text: 'contacto',
-            url: '/contact.html',
+            url: '/contact',
           },
         ],
         socialMedia: {
