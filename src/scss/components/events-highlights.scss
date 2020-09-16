@@ -1,12 +1,23 @@
 .event {
   $root: &;
+  background-image: url('../static/assets/forma-eventos.png');
+  background-position: -3vw;
+  background-position-y: 45vw;
+  background-repeat: no-repeat;
+  background-size: auto 30%;
   margin: 0 auto 80px;
   max-width: 550px;
+
 
   &__wraper {
     display: flex;
     flex-direction: column;
     padding: 0 49px;
+
+    &-image {
+      justify-content: center;
+      margin: 8vw;
+    }
   }
 
   &.event__feature {
@@ -32,9 +43,16 @@
   }
 
   &__title {
+    display: block;
     font-family: $hkgrotesk-bold;
     font-size: $mobile-card-titles;
+    margin: 10vw;
     margin-bottom: 20px;
+    width: 66vw;
+
+    &-desktop {
+      display: none;
+    }
   }
 
   &__image {
@@ -92,6 +110,64 @@
       display: block;
       max-width: 100%;
       padding: 21px 0;
+    }
+  }
+
+  @include viewport-desktop() {
+    & {
+      background-position: -3vw;
+      background-position-y: 23vw;
+      background-size: auto 50%;
+      display: flex;
+      flex-direction: row;
+      max-width: 1175px;
+    }
+
+      &.event__feature {
+
+      #{$root}__decoration {
+        background-image: url('../static/assets/forma-eventos2.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: auto;
+        bottom: -21.5%;
+        height: 31%;
+        }
+      }
+
+    &__title-desktop {
+      display: block;
+      font-size: $desktop-titles;
+      margin: 3vw;
+      width: 600px;
+    }
+
+    &__title {
+      display:none;
+    }
+
+    &__text {
+      font-size: $desktop-paragraph;
+    }
+    &__wraper {
+
+      &-image {
+        margin: 2vw;
+      }
+    }
+    &__image {
+      width: 458px;
+    }
+    &__link {
+      font-size: $desktop-paragraph;
+      margin: 0;
+      width: 33%;
+    }
+
+    .more-info {
+      &__description {
+        font-size: $desktop-paragraph;
+      }
     }
   }
 }
