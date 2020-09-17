@@ -52,13 +52,13 @@
       &{
         align-items: center;
         background-image: url('../static/assets/formas-desktop.svg');
-        background-position-x: 10vw;
-        background-position-y: 5vw;
+        background-position-x: 0vw;
+        background-position-y: 4vw;
         background-repeat: no-repeat;
         background-size: 853px;
         display: flex;
         flex-direction: row;
-        margin: 30px;
+        margin: auto;
         margin-bottom: 92px;
       }
 
@@ -67,7 +67,6 @@
       background-image: none;
       display: flex;
       flex-direction: row;
-      margin-left: 200px;
     }
 
     &__container-text {
