@@ -1,6 +1,7 @@
 .scenarios {
-  padding-bottom: 230px;
-  padding-top: 30px;
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 30px 60px 230px;
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -15,8 +16,6 @@
   }
 
   &__principal-container {
-    padding-left: 65px;
-    padding-right: 63px;
     position: relative;
   }
 
@@ -29,26 +28,32 @@
 
   &__images--0 {
     position: absolute;
-    right: 32px;
+    right: -35px;
     text-align: right;
-    top: -89px;
-    width: 40%;
+    top: -109px;
+    width: 59%;
     z-index: 1;
   }
 
   &__images--1 {
     position: relative;
 
+    .scenarios__text {
+      margin: 0;
+      margin-bottom: 20px;
+      width: 120px;
+    }
+
     &::before {
       background-image: url('../static/assets/forma-azul.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       content: '';
-      height: 26%;
+      height: 27%;
       left: 22%;
       position: absolute;
-      top: 13px;
-      width: 48%;
+      top: -22px;
+      width: 44%;
       z-index: -1;
     }
 
@@ -61,21 +66,109 @@
       height: 8%;
       position: absolute;
       right: -2px;
-      text-align: right;
       width: 20%;
     }
   }
 
   &__images--2 {
+    bottom: -48%;
     display: flex;
     flex-direction: column-reverse;
-    left: 8%;
+    left: -13%;
     position: absolute;
-    top: 88%;
-    width: 40%;
+    width: 59%;
 
     .scenarios__text {
       width: 200px;
+    }
+  }
+
+  @include viewport-desktop() {
+    max-width: 450px;
+    padding: 80px 30px 130px;
+
+    &__title {
+      font-size: $desktop-titles;
+      height: 136px;
+      line-height: 65px;
+      margin-bottom: 68px;
+      margin-left: -37px;
+      margin-right: auto;
+      text-align: center;
+      width: 464px;
+    }
+
+    &__principal-container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__text {
+      font-size: 22px;
+      margin-bottom: 17px;
+      margin-top: 17px;
+    }
+
+    &__images--0 {
+      right: -74%;
+      text-align: right;
+      top: -22px;
+      width: 360px;
+
+      &::after {
+        background-image: url('../static/assets/forma-puntos.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        bottom: -11%;
+        content: '';
+        height: 18%;
+        position: absolute;
+        right: -43px;
+        text-align: right;
+        width: 34%;
+      }
+    }
+
+    &__images--1 {
+      display: flex;
+      flex-direction: column-reverse;
+      margin-left: auto;
+      margin-right: auto;
+      width: 120%;
+
+      .scenarios__text {
+        margin-top: 17px;
+        width: auto;
+      }
+
+      &::before {
+        background-image: url('../static/assets/forma-azul.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        content: '';
+        height: 42%;
+        left: -50%;
+        position: absolute;
+        top: 27px;
+        width: 59%;
+        z-index: -1;
+      }
+      &::after {
+        background-image: none;
+      }
+    }
+
+    &__images--2 {
+      bottom: 6%;
+      height: 360px;
+      left: -82%;
+      width: 360px;
+
+      .scenarios__text {
+        margin: 0;
+        margin-top: 17px;
+        width: 290px;
+      }
     }
   }
 }

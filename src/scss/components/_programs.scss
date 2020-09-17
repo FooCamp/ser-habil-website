@@ -1,11 +1,13 @@
 .slider {
-  align-items: center;
-  background-image: url('../static/assets/forma-1.jpg');
-  background-position: right;
-  background-position-y: 155px;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
+  &__wraper {
+    align-items: center;
+    background-image: url('../static/assets/forma-1.jpg');
+    background-position: right;
+    background-position-y: 155px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -37,7 +39,7 @@
     scrollbar-width: none;
     width: 100%;
 
-    & :focus {
+    &:focus {
       outline: solid 1px $orange;
     }
 
@@ -102,5 +104,62 @@
 
   &-card {
     scroll-snap-align: center;
+  }
+
+  @include viewport-desktop {
+    background-image: url('../static/assets/orange2-desktop.png');
+    background-position: right;
+    background-position-x: 1180px;
+    background-position-y: 540px;
+    background-repeat: no-repeat;
+
+    &__wraper {
+      background-image: url('../static/assets/orange-desktop.png');
+      background-position: left;
+      background-position-x: 32px;
+      background-position-y: 200px;
+    }
+
+    &-card__img {
+      width: 100%;
+    }
+
+    &-card {
+      margin-bottom: 180px;
+      margin-left: 11px;
+      margin-right: 11px;
+      margin-top: 68px;
+      width: 276px;
+    }
+    &-card:first-of-type {
+      padding-left: 0;
+    }
+
+    &-card:last-of-type {
+      padding-right: 0;
+    }
+
+    &-card__text {
+      margin-top: 69px;
+    }
+
+    &-cards__container {
+      margin-left: 132px;
+    }
+
+    &__text {
+      font-size: $desktop-paragraph;
+      width: 545px;
+    }
+
+    &__title {
+      font-size: $desktop-titles;
+      width: 420px;
+    }
+
+    &-card__text {
+      font-size: $desktop-card-titles;
+      width: 250px;
+    }
   }
 }
