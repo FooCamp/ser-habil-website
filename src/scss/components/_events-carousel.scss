@@ -1,17 +1,17 @@
 .carousel {
   align-items: center;
   background-image: url('../static/assets/forma-2.png');
-  background-position: right;
-  background-position-y: 80px;
+  background-position-x: 100%;
+  background-position-y: 14%;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
 
   &__button {
     border: 0;
-    height: 40px;
-    margin: auto;
-    width: 40px;
+    margin: -0.5em;
+    width: 3em;
+
 
     &--right {
       transform: rotate(180deg);
@@ -30,20 +30,24 @@
     font-family: $hkgrotesk-bold;
     font-size: $mobile-title;
     line-height: 1;
-    margin-bottom: 20px;
-    margin-top: 21px;
+    margin-bottom: 1em;
+    margin-top: 1em;
     text-align: center;
-    width: 200px;
+    width: 8em;
   }
 
   &__subtitle {
     font-family: $hkgrotesk-bold;
     font-size: $mobile-title;
     line-height: 1;
-    margin-bottom: 20px;
-    margin-top: 21px;
+    margin-bottom: 1em;
+    margin-top: 1em;
     text-align: center;
-    width: 300px;
+    width: 12em;
+
+    &-span {
+      display: block;
+    }
   }
 
   &__text {
@@ -51,43 +55,103 @@
     font-family: $hkgrotesk-regular;
     font-size: $mobile-paragraph;
     height: 64px;
-    margin-bottom: 80px;
+    margin-bottom: 8em;
     text-align: center;
-    width: 270px;
-  }
-
-  &__cards-container {
-    height: 334px;
-    margin: 0 10px;
-    position: relative;
-    width: 246px;
-  }
-
-  &-card {
-    opacity: 0;
-    position: absolute;
-    transition: opacity 1s linear;
-
-    &--active {
-      opacity: 1;
-    }
-
-    &__img {
-      display: flex;
-      height: 334px;
-      justify-content: center;
-      overflow: hidden;
-      width: 246px;
-
-      img {
-        height: 100%;
-        width: initial;
-      }
-    }
+    width: 14em;
   }
 
   &__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &__cards-container {
+    display: inline-block;
+    height: 40vh;
+    max-width: 60vw;
+    position: relative;
+  }
+
+
+  &-card {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    transition: opacity 1s linear;
+    width: 100%;
+
+    &--active {
+      opacity: 1;
+      position: relative;
+    }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      overflow: hidden;
+
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @include viewport-desktop() {
+    & {
+      background-position-x: 580px;
+      background-position-y: 335px;
+      background-size: 300px;
+      margin: auto;
+    }
+
+    &__button {
+      border: 0;
+      margin: -0.5em;
+      width: 4em;
+    }
+
+    &__title {
+      font-size: 68px;
+      height: 136px;
+      margin-bottom: 66px;
+      margin-top: 180px;
+      width: 478px;
+    }
+
+    &__cards-container {
+      height: 630px;
+      margin-bottom: 66px;
+      width: 468px;
+    }
+
+    &-card {
+      height: 620px;
+      width: 458px;
+
+      &__img {
+        height: 100%;
+        margin: 10px;
+        width: 100%;
+      }
+    }
+
+    &__subtitle {
+      font-size: 68px;
+      height: 136px;
+      margin-bottom: 41px;
+      width: 1144px;
+    }
+
+    &__text {
+      font-size: 22px;
+      height: 87px;
+      margin-bottom: 180px;
+      width: 660px;
+    }
   }
 }
