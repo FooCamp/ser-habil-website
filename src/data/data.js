@@ -79,7 +79,7 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
-        subtitle: 'Catalina López Campeona nacional de natación',
+        subtitle: ['Catalina López','Campeona nacional de natación'],
         url: 'events',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
