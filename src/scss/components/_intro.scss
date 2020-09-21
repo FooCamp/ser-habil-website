@@ -48,19 +48,19 @@
     width: 70vw;
   }
 
-    @include viewport-desktop() {
-      &{
-        align-items: center;
-        background-image: url('../static/assets/formas-desktop.svg');
-        background-position-x: 0vw;
-        background-position-y: 4vw;
-        background-repeat: no-repeat;
-        background-size: 853px;
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        margin-bottom: 92px;
-      }
+  @include viewport-desktop() {
+    & {
+      align-items: center;
+      background-image: url('../static/assets/formas-desktop.svg');
+      background-position-x: 0vw;
+      background-position-y: 4vw;
+      background-repeat: no-repeat;
+      background-size: 853px;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      margin-bottom: 92px;
+    }
 
 
     &__container-general {
@@ -79,8 +79,8 @@
     &__image--0 {
       height: 100%;
       margin-left: 271px;
-      margin-top: 99px;
       margin-right: 60px;
+      margin-top: 99px;
       width: 458px;
     }
 
