@@ -23,8 +23,9 @@ const componentIntro = (data) => {
   const title = newText('h2', data.title, ['intro__title']);
   const imageIntro = nodeImages(data.images);
   // eslint-disable-next-line prettier/prettier
-  const containerGeneral = newContainer('div', [...imageIntro, title, paragraph], ['intro__container-general']);
-  const section = newContainer('section', [containerGeneral], ['intro']);
+  const containerText = newContainer('div', [title, paragraph], ['intro__container-text']);
+  const containerGeneral = newContainer('div', [...imageIntro,], ['intro__container-general']);
+  const section = newContainer('section', [containerGeneral, containerText], ['intro','container']);
 
   return section;
 };
