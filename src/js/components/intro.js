@@ -31,11 +31,12 @@ const componentIntro = (data) => {
 
   let textNodes = [];
   if (data.texts) textNodes = nodeText(data.texts);
-  const textIntro = newContainer( 'div', [...textNodes], ['intro__texts-conteiner'])
+  const textIntro = newContainer( 'div', [...textNodes], ['intro__texts-block'])
 
   // eslint-disable-next-line prettier/prettier
-  const containerGeneral = newContainer('div', [...imageIntro, title, paragraph, textIntro], ['intro__container-general']);
-  const section = newContainer('section', [containerGeneral ], ['intro']);
+  const containerText = newContainer('div', [title, paragraph,textIntro ], ['intro__container-text']);
+  const containerGeneral = newContainer('div', [...imageIntro ], ['intro__container-general']);
+  const section = newContainer('section', [containerGeneral, containerText ], ['intro','container']);
 
   return section;
 };

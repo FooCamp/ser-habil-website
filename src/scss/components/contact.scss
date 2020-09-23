@@ -36,4 +36,46 @@
       padding-bottom: 40px;
     }
   }
+
+  @include viewport-desktop {
+    &__container-Information {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__title {
+      font-family: $hkgrotesk-bold;
+      font-size: $desktop-titles;
+      margin-bottom: 40px;
+      margin-left: 250px;
+      width: 630px;
+    }
+
+    &__paragraph {
+      font-family: $hkgrotesk-regular;
+      font-size: $desktop-paragraph;
+      margin-bottom: 80px;
+      margin-left: 300px;
+      width: 535px;
+    }
+
+    &__label {
+      font-family: $desktop-subtitles;
+      font-size: $hkgrotesk-bold;
+      margin-bottom: 23px;
+    }
+
+    &__texts {
+      font-family: $hkgrotesk-regular;
+      font-size: $desktop-paragraph;
+
+      &:last-of-type {
+        margin-bottom: 100px;
+      }
+    }
+
+    &__information-texts {
+      margin-bottom: 0;
+    }
+  }
 }

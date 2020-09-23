@@ -1,0 +1,123 @@
+.intro {
+  background-image: url('../static/assets/blue-form.png');
+  background-position-x: right;
+  background-position-y: 254px;
+  background-repeat: no-repeat;
+
+
+  &__container-general {
+    align-items: center;
+    background-image: url('../static/assets/orange-form.png');
+    background-position-x: 53px;
+    background-position-y: 14px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__texts-block {
+    color: $gray;
+    margin: 10vw;
+
+    :first-child {
+      color: $black;
+      margin: 5vw 0;
+    }
+
+  }
+
+  &__image--0 {
+    margin-left: 32vw;
+    margin-right: 7vw;
+    margin-top: 8vw;
+    width: 61vw;
+  }
+
+  &__image--1 {
+    float: left;
+    margin-left: -15vw;
+    margin-right: 10vw;
+    margin-top: 76vw;
+    position: absolute;
+    width: 35vw;
+  }
+
+  &__title {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    margin-left: 51vw;
+    margin-top: 8vw;
+    width: 33vw;
+  }
+
+  &__paragraph {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    margin-left: 11vw;
+    margin-top: 8vw;
+    width: 70vw;
+  }
+
+  @include viewport-desktop() {
+    & {
+      align-items: center;
+      background-image: url('../static/assets/formas-desktop.svg');
+      background-position-x: 0vw;
+      background-position-y: 4vw;
+      background-repeat: no-repeat;
+      background-size: 853px;
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      margin-bottom: 92px;
+    }
+
+
+    &__container-general {
+      background-image: none;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__container-text {
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      text-align: inherit;
+    }
+
+    &__image--0 {
+      height: 100%;
+      margin-left: 271px;
+      margin-right: 60px;
+      margin-top: 99px;
+      width: 458px;
+    }
+
+    &__image--1 {
+      height: 520px;
+      margin-left: 35px;
+      margin-top: 95px;
+      width: 420px;
+    }
+
+    &__title {
+      font-size: $desktop-titles;
+      height: 204px;
+      margin-bottom: 27px;
+      margin-left: 10px;
+      margin-right: 53px;
+      margin-top: 100px;
+      width: 320px;
+    }
+
+    &__paragraph {
+      font-size: $desktop-paragraph;
+      margin-left: 11px;
+      margin-top: 28px;
+      width: 339px;
+    }
+
+  }
+}

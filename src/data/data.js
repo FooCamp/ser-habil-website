@@ -132,14 +132,6 @@ const pageData = {
         // TODO: complete info contact form
       },
       {
-        component: 'ubication',
-        iframe: {
-          src:
-            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0906492940917!2d-75.59378303147989!3d6.255443893561203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22c97971d770b4ef!2sAquatic%20Complex%20Atanasio%20Girardot!5e0!3m2!1sen!2sus!4v1599412191860!5m2!1sen!2sus',
-          alt: 'ubicacion de la sede principal',
-        },
-      },
-      {
         component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
@@ -158,6 +150,14 @@ const pageData = {
             texts: ['hola@serhabil.com', 'hola@serhabil.com'],
           },
         ],
+      },
+      {
+        component: 'ubication',
+        iframe: {
+          src:
+            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0906492940917!2d-75.59378303147989!3d6.255443893561203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22c97971d770b4ef!2sAquatic%20Complex%20Atanasio%20Girardot!5e0!3m2!1sen!2sus!4v1599412191860!5m2!1sen!2sus',
+          alt: 'ubicacion de la sede principal',
+        },
       },
     ],
   },
@@ -294,30 +294,23 @@ const pageData = {
     sections: [
       {
         component: 'hero',
-        title: 'Unete a nosotros',
+        title: 'Acerca de la fundación',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'playing.jpg',
-            alt: 'playground',
+            src: 'fundation-1.png',
+            alt: 'kids-room',
           },
           {
-            src: 'childs.png',
-            alt: 'kids',
+            src: 'fundation-2.png',
+            alt: 'teens',
           },
         ],
         texts: [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
         ],
-      },
-      {
-        component: 'imageComponent',
-        image: {
-          src: '',
-          alt: '',
-        },
       },
       {
         component: 'imagenFundation',

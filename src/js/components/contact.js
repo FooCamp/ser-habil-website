@@ -28,11 +28,11 @@ const nodeInformation = (informationArray) => {
   informationArray.forEach((item, index) => {
     const title = newText('h3', item.label, ['contact__label']);
     const paragraph = createrTexts(item.texts);
-    const informationTexts = newContainer('div', paragraph, [
-      'contact__information-texts',
-      `contact__information-texts--${index}`,
-    ]);
-    containerInformation.appendChild(title);
+    const informationTexts = newContainer(
+      'div',
+      [title, ...paragraph],
+      ['contact__information-texts', `contact__information-texts--${index}`],
+    );
     containerInformation.appendChild(informationTexts);
   });
   return containerInformation;
