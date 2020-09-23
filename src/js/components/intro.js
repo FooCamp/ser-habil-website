@@ -34,9 +34,12 @@ const componentIntro = (data) => {
   const textIntro = newContainer( 'div', [...textNodes], ['intro__texts-block'])
 
   // eslint-disable-next-line prettier/prettier
-  const containerText = newContainer('div', [title, paragraph,textIntro ], ['intro__container-text']);
+  const textsDesktop = newContainer('div', [textIntro], ['intro__text-desktop']);
+  const containerText = newContainer('div', [title, paragraph  ], ['intro__container-text']);
   const containerGeneral = newContainer('div', [...imageIntro ], ['intro__container-general']);
-  const section = newContainer('section', [containerGeneral, containerText ], ['intro','container']);
+  const containerFundation = newContainer( 'div', [containerGeneral, containerText], [ 'intro__container-fundation']);
+  const section = newContainer('section', [ containerFundation, textsDesktop  ], ['intro','container']);
+
 
   return section;
 };
