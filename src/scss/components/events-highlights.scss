@@ -8,7 +8,6 @@
   margin: 0 auto 80px;
   max-width: 550px;
 
-
   &__wraper {
     display: flex;
     flex-direction: column;
@@ -124,6 +123,7 @@
     }
 
     &__feature {
+      margin-top: 80px;
       #{$root}__decoration {
         background-image: url('../static/assets/forma-eventos2.png');
         background-position: right;
@@ -136,13 +136,13 @@
 
     &__title-desktop {
       display: block;
-      font-size: $desktop-titles;
-      margin: 3vw;
-      width: 600px;
+      font-size: 280%;
+      margin-bottom: 30px;
+      margin-top: 50px;
     }
 
     &__title {
-      display:none;
+      display: none;
     }
 
     &__text {
@@ -168,6 +168,10 @@
     .more-info {
       &__description {
         font-size: $desktop-paragraph;
+      }
+
+      &__wraper {
+        width: 60.5%;
       }
     }
   }
