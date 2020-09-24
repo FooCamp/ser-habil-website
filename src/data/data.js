@@ -109,12 +109,12 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'girl-contact.png',
             alt: 'girl',
           },
           {
-            src: '',
-            alt: 'cellphome',
+            src: 'cellphone-contact.png',
+            alt: 'cellphone',
           },
         ],
       },
