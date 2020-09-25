@@ -3,6 +3,8 @@
   background-position-x: right;
   background-position-y: 254px;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 
   &__container-general {
     align-items: center;
@@ -12,6 +14,21 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+  }
+
+  &__container-fundation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__texts-block {
+    color: $gray;
+    margin: 10vw;
+
+    :first-child {
+      color: $black;
+      margin: 5vw 0;
+    }
   }
 
   &__image--0 {
@@ -68,6 +85,24 @@
       margin: 0;
       margin-right: 40px;
       position: relative;
+    }
+
+    &__container-fundation {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__texts-block {
+      color: $gray;
+      font-size: $desktop-paragraph;
+      margin: 0px 600px 40px 370px;
+      width: 458px;
+
+      :first-child {
+        color: $black;
+        font-family: $hkgrotesk-bold;
+        margin: 5vw 0;
+      }
     }
 
     &__container-text {
