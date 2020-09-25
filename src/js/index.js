@@ -12,6 +12,8 @@ import { pageData } from '../data/data';
 import { componentContactUs } from './components/contact';
 import { imageComponet } from './components/image-fundacion';
 import { eventsComponent } from './components/events-highlights';
+import { eventsListComponent } from './components/events-list';
+
 
 /**
  * Component map
@@ -30,6 +32,7 @@ const components = {
   contactUs: componentContactUs,
   imagenFundation: imageComponet,
   featuredEvent: eventsComponent,
+  eventsList: eventsListComponent,
 };
 
 const getCurrentPage = () => {
