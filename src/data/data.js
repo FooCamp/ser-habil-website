@@ -197,9 +197,9 @@ const pageData = {
         events: [
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
+            title: 'Yoga para el Alma',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-5.png',
               alt: 'event image',
             },
             text:
@@ -227,7 +227,7 @@ const pageData = {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-2.png',
               alt: 'event image',
             },
             text:
@@ -253,9 +253,9 @@ const pageData = {
           },
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
+            title: 'Dia en la Granja',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-3.png',
               alt: 'event image',
             },
             text:
@@ -270,7 +270,7 @@ const pageData = {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-4.jpg',
               alt: 'event image',
             },
             text:
