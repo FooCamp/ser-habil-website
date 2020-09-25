@@ -109,12 +109,12 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'girl-contact.png',
             alt: 'girl',
           },
           {
-            src: '',
-            alt: 'cellphome',
+            src: 'cellphone-contact.png',
+            alt: 'cellphone',
           },
         ],
       },
@@ -197,9 +197,9 @@ const pageData = {
         events: [
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
+            title: 'Yoga para el Alma',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-5.png',
               alt: 'event image',
             },
             text:
@@ -227,7 +227,7 @@ const pageData = {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-2.png',
               alt: 'event image',
             },
             text:
@@ -253,9 +253,9 @@ const pageData = {
           },
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
+            title: 'Dia en la Granja',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-3.png',
               alt: 'event image',
             },
             text:
@@ -270,7 +270,7 @@ const pageData = {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
             image: {
-              src: 'eventImage.jpg',
+              src: 'event-4.jpg',
               alt: 'event image',
             },
             text:
@@ -294,30 +294,23 @@ const pageData = {
     sections: [
       {
         component: 'hero',
-        title: 'Unete a nosotros',
+        title: 'Acerca de la fundación',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'playing.jpg',
-            alt: 'playground',
+            src: 'fundation-1.png',
+            alt: 'kids-room',
           },
           {
-            src: 'childs.png',
-            alt: 'kids',
+            src: 'fundation-2.png',
+            alt: 'teens',
           },
         ],
         texts: [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
         ],
-      },
-      {
-        component: 'imageComponent',
-        image: {
-          src: '',
-          alt: '',
-        },
       },
       {
         component: 'imagenFundation',

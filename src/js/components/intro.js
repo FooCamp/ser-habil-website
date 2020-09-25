@@ -13,7 +13,13 @@ const nodeImages = (imagesArrays) => {
   });
   return imagesList;
 };
-
+const nodeText = (textArray) => {
+  const textsList = textArray.map((text) => {
+    const textNodes = newText ('p', text , [ 'intro__texts'] )
+    return textNodes;
+  });
+  return textsList;
+};
 /**
  * @param {object} data objecto que contiene la información de componentes.
  * Nos devuelve unos nodos section que contienen un parrafo, un título, dos imagenes principales y dos de fondo.
@@ -22,10 +28,18 @@ const componentIntro = (data) => {
   const paragraph = newText('p', data.text, ['intro__paragraph']);
   const title = newText('h2', data.title, ['intro__title']);
   const imageIntro = nodeImages(data.images);
+
+  let textNodes = [];
+  if (data.texts) textNodes = nodeText(data.texts);
+  const textIntro = newContainer( 'div', [...textNodes], ['intro__texts-block'])
+
   // eslint-disable-next-line prettier/prettier
-  const containerText = newContainer('div', [title, paragraph], ['intro__container-text']);
-  const containerGeneral = newContainer('div', [...imageIntro,], ['intro__container-general']);
-  const section = newContainer('section', [containerGeneral, containerText], ['intro','container']);
+  const textsDesktop = newContainer('div', [textIntro], ['intro__text-desktop']);
+  const containerText = newContainer('div', [title, paragraph  ], ['intro__container-text']);
+  const containerGeneral = newContainer('div', [...imageIntro ], ['intro__container-general']);
+  const containerFundation = newContainer( 'div', [containerGeneral, containerText], [ 'intro__container-fundation']);
+  const section = newContainer('section', [ containerFundation, textsDesktop  ], ['intro','container']);
+
 
   return section;
 };
