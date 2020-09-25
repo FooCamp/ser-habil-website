@@ -294,30 +294,23 @@ const pageData = {
     sections: [
       {
         component: 'hero',
-        title: 'Unete a nosotros',
+        title: 'Acerca de la fundación',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: 'playing.jpg',
-            alt: 'playground',
+            src: 'fundation-1.png',
+            alt: 'kids-room',
           },
           {
-            src: 'childs.png',
-            alt: 'kids',
+            src: 'fundation-2.png',
+            alt: 'teens',
           },
         ],
         texts: [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
         ],
-      },
-      {
-        component: 'imageComponent',
-        image: {
-          src: '',
-          alt: '',
-        },
       },
       {
         component: 'imagenFundation',
