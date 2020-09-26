@@ -109,8 +109,8 @@
 
   @include viewport-desktop() {
     & {
-      background-position: -1vw;
-      background-position-y: 21vw;
+      background-position: 3vw;
+      background-position-y: 30vw;
       background-size: auto 50%;
       max-width: 1440px;
       width: 100%;
@@ -131,7 +131,7 @@
       background-size: auto 56%;
 
       #{$root}__decoration {
-        background-image: url('../static/assets/forma-eventos2.png');
+        background-image: url('../static/assets/event_forma-desktop.png');
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
@@ -180,6 +180,10 @@
     .more-info {
       &__description {
         font-size: $desktop-paragraph;
+      }
+
+      &__wraper {
+        width: 60.5%;
       }
     }
   }
