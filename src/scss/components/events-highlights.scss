@@ -114,30 +114,40 @@
 
   @include viewport-desktop() {
     & {
-      background-position: -1vw;
-      background-position-y: 21vw;
+      background-position: 3vw;
+      background-position-y: 30vw;
       background-size: auto 50%;
+      max-width: 1440px;
+      position: relative;
+    }
+
+    &__organitation {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      margin: 0 auto;
       max-width: 1175px;
     }
 
     &__feature {
       padding-top: 137px;
       #{$root}__decoration {
-        background-image: url('../static/assets/forma-eventos2.png');
+        background-image: url('../static/assets/event_forma-desktop.png');
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
-        bottom: -21.5%;
+        bottom: 26.5%;
         height: 31%;
+      }
+
+      #{$root}__title-desktop {
+        font-size: $desktop-titles;
       }
     }
 
     &__title-desktop {
       display: block;
-      font-size: $desktop-titles;
+      font-size: $desktop-subtitles;
       margin-bottom: 30px;
       margin-top: 50px;
     }

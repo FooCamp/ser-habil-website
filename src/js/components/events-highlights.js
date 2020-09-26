@@ -18,7 +18,7 @@ const buildMoreInfo = (arrayMoreinfo) => {
 
 const eventsComponent = (data) => {
   const titleDesktop = newText('h1', `Evento destacado: ${data.title}`, ['event__title-desktop']);
-  const title = newText('h3', `Evento destacado: ${data.title}`, ['event__title'])
+  const title = newText('h3', `Evento destacado: ${data.title}`, ['event__title']);
   const eventImage = newMultimedia('img', data.image, ['event__image']);
   const text = newText('p', data.text, ['event__text']);
   const moreInfo = buildMoreInfo(data.moreInfo);
@@ -29,15 +29,20 @@ const eventsComponent = (data) => {
   const sectionClasses = data.featured
     ? ['container', 'event', 'event__feature']
     : ['container', 'event'];
-  const wrapergeneral = newContainer('div', [titleDesktop, text, moreInfo, wraperLink], ['event__wraper']);
-  const wraperTextGeneral = newContainer('div', [ wrapergeneral], []);
-  const wraperimage = newContainer('div', [], ['event__decoration']);
-  const wraperImageGeneral = newContainer('div',[ title, eventImage, ], ['event__wraper-image'])
-  const section = newContainer(
-    'section',
-    [ wraperimage, wraperImageGeneral,wraperTextGeneral],
-    sectionClasses,
+  const wrapergeneral = newContainer(
+    'div',
+    [titleDesktop, text, moreInfo, wraperLink],
+    ['event__wraper'],
   );
+  const wraperTextGeneral = newContainer('div', [wrapergeneral], ['event__container-wraper']);
+  const wraperimage = newContainer('div', [], ['event__decoration']);
+  const wraperImageGeneral = newContainer('div', [title, eventImage], ['event__wraper-image']);
+  const containerWraper = newContainer(
+    'div',
+    [wraperImageGeneral, wraperTextGeneral],
+    ['event__organitation'],
+  );
+  const section = newContainer('section', [wraperimage, containerWraper], sectionClasses);
 
   return section;
 };
