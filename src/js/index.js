@@ -7,8 +7,14 @@ import { programsComp } from './components/programs';
 import { scenariosComp } from './components/scenarios';
 import { eventsCarousel } from './components/events-carousel';
 import { footerComp } from './components/footer';
+import { createrMapComponen } from './components/ubication';
 import { pageData } from '../data/data';
 import { componentContactForm} from './components/contact-form';
+import { componentContactUs } from './components/contact';
+import { imageComponet } from './components/image-fundacion';
+import { eventsComponent } from './components/events-highlights';
+import { eventsListComponent } from './components/events-list';
+
 
 /**
  * Component map
@@ -24,6 +30,11 @@ const components = {
   scenarios: scenariosComp,
   events: eventsCarousel,
   footer: footerComp,
+  ubication: createrMapComponen,
+  contactUs: componentContactUs,
+  imagenFundation: imageComponet,
+  featuredEvent: eventsComponent,
+  eventsList: eventsListComponent,
 };
 
 const getCurrentPage = () => {

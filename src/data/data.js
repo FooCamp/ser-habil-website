@@ -67,7 +67,7 @@ const pageData = {
           {
             src: 'piscina-escuela.png',
             alt: 'Piscina Escuela',
-            text: 'Piscina Escuela 1',
+            text: 'Piscina<br>Escuela 1',
           },
           {
             src: 'piscina-1.png',
@@ -79,8 +79,8 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
-        subtitle: 'Catalina López Campeona nacional de natación',
-        url: 'events.html',
+        subtitle: ['Catalina López','Campeona nacional de natación'],
+        url: 'events',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
@@ -100,45 +100,6 @@ const pageData = {
       },
     ],
   },
-  about: {
-    sections: [
-      {
-        component: 'hero',
-        title: 'Unete a nosotros',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        aditionalTexts: [
-          {
-            text:
-              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-            bold: true,
-          },
-          {
-            text:
-              'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-            bold: false,
-          },
-        ],
-        images: [
-          {
-            src: '',
-            alt: '',
-          },
-          {
-            src: '',
-            alt: '',
-          },
-        ],
-      },
-      {
-        component: 'imageComponent',
-        image: {
-          src: '',
-          alt: '',
-        },
-      },
-    ],
-  },
   contact: {
     sections: [
       {
@@ -148,12 +109,12 @@ const pageData = {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         images: [
           {
-            src: '',
+            src: 'girl-contact.png',
             alt: 'girl',
           },
           {
-            src: '',
-            alt: 'cellphome',
+            src: 'cellphone-contact.png',
+            alt: 'cellphone',
           },
         ],
       },
@@ -196,28 +157,32 @@ const pageData = {
         },
       },
       {
-        component: 'map',
-        // TODO: complete map reference info
-      },
-      {
         component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
         contactInfo: [
           {
-            label: 'Dirección',
+            label: 'Dirección:',
             texts: ['Carrera 52 No. 67A-15', 'Torre C, Piso 7, Ruta N', 'Medellín, Colombia'],
           },
           {
-            label: 'Teléfono',
-            texts: ['+57 123 456 7890', '+57 123 456 7890'],
+            label: 'Teléfono:',
+            texts: ['+57 4 604 5535', '+57 4 604 5535'],
           },
           {
-            label: 'Correo electrónico',
+            label: 'Correo electrónico:',
             texts: ['hola@serhabil.com', 'hola@serhabil.com'],
           },
         ],
+      },
+      {
+        component: 'ubication',
+        iframe: {
+          src:
+            'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0906492940917!2d-75.59378303147989!3d6.255443893561203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22c97971d770b4ef!2sAquatic%20Complex%20Atanasio%20Girardot!5e0!3m2!1sen!2sus!4v1599412191860!5m2!1sen!2sus',
+          alt: 'ubicacion de la sede principal',
+        },
       },
     ],
   },
@@ -226,12 +191,16 @@ const pageData = {
       {
         component: 'featuredEvent',
         title: 'Dia de campo',
-        image: '',
+        featured: true,
+        image: {
+          src: 'eventImage.jpg',
+          alt: 'event image',
+        },
         text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Lorem ipsum dolor sit ame, consectetur adipiscing elit, sed do eiusmod tempor\n incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         moreInfo: [
           {
-            text: 'fecha',
+            text: 'Fecha',
             description: 'Febrero, 12, 2020',
           },
           {
@@ -239,13 +208,13 @@ const pageData = {
             description: '3:30 p.m.',
           },
           {
-            text: 'place',
+            text: 'Lugar',
             description: 'Fundación Ser Hábil, sala 3',
           },
         ],
         buttonInfo: {
           text: 'Registrarme',
-          link: '',
+          link: 'https://docs.google.com/forms/u/0/',
         },
       },
       {
@@ -253,8 +222,11 @@ const pageData = {
         events: [
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
-            image: '',
+            title: 'Yoga para el Alma',
+            image: {
+              src: 'event-5.png',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [
@@ -279,7 +251,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'event-2.png',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [
@@ -303,8 +278,11 @@ const pageData = {
           },
           {
             component: 'event',
-            title: 'Curso de pintura con acuarelas',
-            image: '',
+            title: 'Dia en la Granja',
+            image: {
+              src: 'event-3.png',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [],
@@ -316,7 +294,10 @@ const pageData = {
           {
             component: 'event',
             title: 'Curso de pintura con acuarelas',
-            image: '',
+            image: {
+              src: 'event-4.jpg',
+              alt: 'event image',
+            },
             text:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
             moreInfo: [
@@ -337,19 +318,29 @@ const pageData = {
   foundation: {
     sections: [
       {
-        component: 'fundacion',
-        hero: {
-          image1: '',
-          image2: '',
-          title: 'Acerca de la fundación',
-        },
-        text1:
+        component: 'hero',
+        title: 'Acerca de la fundación',
+        text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        text2:
+        images: [
+          {
+            src: 'fundation-1.png',
+            alt: 'kids-room',
+          },
+          {
+            src: 'fundation-2.png',
+            alt: 'teens',
+          },
+        ],
+        texts: [
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-        text3:
           'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-        bottomImage: '',
+        ],
+      },
+      {
+        component: 'imagenFundation',
+        src: 'foto-fundacion.jpg',
+        alt: 'niños abrazandoce',
       },
     ],
   },
@@ -369,15 +360,15 @@ const pageData = {
           },
           {
             text: 'eventos',
-            url: '/events.html',
+            url: '/events',
           },
           {
             text: 'fundación',
-            url: '/foundation.html',
+            url: '/foundation',
           },
           {
             text: 'contacto',
-            url: '/contact.html',
+            url: '/contact',
           },
         ],
         socialMedia: {

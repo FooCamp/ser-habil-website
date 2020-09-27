@@ -1,0 +1,58 @@
+.map-section {
+  padding-bottom: 19.2px;
+
+  &__picture-Botton {
+    background-image: url('../static/assets/Forma2-map-mobile.png');
+    background-position-x: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 98.1px 100.8px;
+  }
+
+  &__picture-Top {
+    align-items: center;
+    background-image: url('../static/assets/Forma1-map-mobile.png');
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+    background-size: 103.6px 104.1px;
+  }
+
+  &__container {
+    padding-bottom: 16.4%;
+    padding-top: 9%;
+  }
+
+  &__map {
+    border: 0;
+    height: 510px;
+    width: 100%;
+  }
+
+  @include viewport-desktop() {
+    margin: 0 30px;
+    padding-bottom: 117.9px;
+
+    &__picture-Botton {
+      background-image: url('../static/assets/Forma2-map.png');
+      background-size: 219px 163px;
+    }
+
+    &__picture-Top {
+      background-image: url('../static/assets/Forma-map.png');
+      background-position-x: 0.5%;
+      background-position-y: 14.5%;
+      background-size: 222px 264.1px;
+    }
+
+    &__container {
+      margin: 0 auto;
+      max-width: 1176px;
+      padding-bottom: 4.5%;
+    }
+
+    &__map {
+      height: 620px;
+    }
+  }
+}

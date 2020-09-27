@@ -1,4 +1,4 @@
-import { newText, newContainer, newMultimedia } from './helpers';
+import { newText, newContainer, newMultimedia, } from './helpers';
 
 let currentCard = 0;
 let cardList;
@@ -75,9 +75,13 @@ const eventsCarousel = (data) => {
   } else {
     carousel = newContainer('div', [containerCarousel], ['carousel__container']);
   }
-  const subtitle = newText('h3', data.subtitle, ['carousel__subtitle']);
+  const subtitles = data.subtitle.map((item) => {
+    return newText('span', item, ['carousel__subtitle-span']);
+  })
+  const subtitleContainer = newContainer ('h3', subtitles, ['carousel__subtitle']);
+
   const text = newText('p', data.text, ['carousel__text']);
-  const section = newContainer('section', [title, carousel, subtitle, text], ['carousel']);
+  const section = newContainer('section', [title, carousel, subtitleContainer, text], ['carousel', 'container']);
 
   return section;
 };
