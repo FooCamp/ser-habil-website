@@ -8,12 +8,14 @@ import { scenariosComp } from './components/scenarios';
 import { eventsCarousel } from './components/events-carousel';
 import { footerComp } from './components/footer';
 import { pageData } from '../data/data';
+import { componentContactForm} from './components/contact-form';
 
 /**
  * Component map
  * each component name is mapped to its template.
  */
 const components = {
+  contactForm: componentContactForm,
   default: defaultComp,
   navigation: navigationComponent,
   hero: componentIntro,

@@ -168,7 +168,32 @@ const pageData = {
       },
       {
         component: 'contactForm',
-        // TODO: complete info contact form
+        title: 'Déjanos tus datos',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        formFields: [
+          {
+            label: 'Nombre:',
+            type: 'text',
+            placeholder: 'Juan Carlos López',
+            message: 'Escribe tu nombre',
+          },
+          {
+            label: 'Teléfono:',
+            type: 'numbers',
+            placeholder: 'Ej: 300 123 4567',
+            message: 'Ingresa un número telefónico',
+          },
+          {
+            label: 'Correo electrónico:',
+            type: 'email',
+            placeholder: 'juancarlos',
+            message: 'Escribe tu correo corretamente. Mira un ejemplo: juan@gmail.com',
+          },
+        ],
+        buttonInfo: {
+          text: 'Enviar'
+        },
       },
       {
         component: 'map',
