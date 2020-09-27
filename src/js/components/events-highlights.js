@@ -34,7 +34,7 @@ const eventsComponent = (data) => {
     [titleDesktop, text, moreInfo, wraperLink],
     ['event__wraper'],
   );
-  const wraperTextGeneral = newContainer('div', [wrapergeneral], ['event__container-wraper']);
+  const wraperTextGeneral = newContainer('div', [wrapergeneral], []);
   const wraperimage = newContainer('div', [], ['event__decoration']);
   const wraperImageGeneral = newContainer('div', [title, eventImage], ['event__wraper-image']);
   const containerWraper = newContainer(

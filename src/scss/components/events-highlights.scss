@@ -1,10 +1,5 @@
 .event {
   $root: &;
-  background-image: url('../static/assets/forma-eventos.png');
-  background-position: -3vw;
-  background-position-y: 45vw;
-  background-repeat: no-repeat;
-  background-size: auto 30%;
   margin: 0 auto 80px;
   max-width: 550px;
 
@@ -45,7 +40,7 @@
     display: block;
     font-family: $hkgrotesk-bold;
     font-size: $mobile-card-titles;
-    margin: 10vw;
+    margin: 0 auto 20px;
     margin-bottom: 20px;
     width: 66vw;
 
@@ -118,19 +113,23 @@
       background-position-y: 30vw;
       background-size: auto 50%;
       max-width: 1440px;
-      position: relative;
+      width: 100%;
     }
 
     &__organitation {
       display: flex;
       flex-direction: row;
-      justify-content: center;
       margin: 0 auto;
       max-width: 1175px;
     }
 
-    &__feature {
-      padding-top: 137px;
+    &.event__feature {
+      background-image: url('../static/assets/forma-eventos.png');
+      background-position: 4vw;
+      background-position-y: 20vw;
+      background-repeat: no-repeat;
+      background-size: auto 56%;
+
       #{$root}__decoration {
         background-image: url('../static/assets/event_forma-desktop.png');
         background-position: right;
@@ -142,14 +141,15 @@
 
       #{$root}__title-desktop {
         font-size: $desktop-titles;
+        width: 100%;
       }
     }
 
     &__title-desktop {
       display: block;
-      font-size: $desktop-subtitles;
-      margin-bottom: 30px;
-      margin-top: 50px;
+      font-family: $desktop-subtitles;
+      margin: 3vw;
+      width: 75%;
     }
 
     &__title {
@@ -158,6 +158,7 @@
 
     &__text {
       font-size: $desktop-paragraph;
+      width: 96%;
     }
 
     &__wraper {
