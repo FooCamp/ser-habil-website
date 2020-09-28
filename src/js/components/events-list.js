@@ -1,9 +1,9 @@
 
-import { newContainer } from './helpers';
+import { newContainer, newText} from './helpers';
 import { eventsComponent } from './events-highlights';
 
 /**
- * @param {object} data; 
+ * @param {object} data;
  */
 
 const eventsListComponent = (data) => {
@@ -13,8 +13,11 @@ const eventsListComponent = (data) => {
         title.innerText= title.innerText.replace('Evento destacado:', 'Evento:');
         return event;
     });
-    const section = newContainer('section', events, []);
+    const titleBig = newText('h2', data.titleBig, ['event__title-big']);
+    const section = newContainer('section', [ titleBig, ...events], []);
+    section.id = 'scroll';
     return section;
+
 
 };
 
