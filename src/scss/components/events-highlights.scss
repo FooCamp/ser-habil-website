@@ -129,6 +129,7 @@
       background-position-y: 20vw;
       background-repeat: no-repeat;
       background-size: auto 56%;
+      margin-top: 100px;
 
       #{$root}__decoration {
         background-image: url('../static/assets/event_forma-desktop.png');
@@ -141,15 +142,17 @@
 
       #{$root}__title-desktop {
         font-size: $desktop-titles;
+        margin-top: 40px;
         width: 100%;
       }
     }
 
     &__title-desktop {
       display: block;
-      font-family: $desktop-subtitles;
-      margin: 3vw;
-      width: 75%;
+      font-size: $desktop-subtitles;
+      margin-bottom: 18px;
+      margin-top: 90px;
+      width: 100%;
     }
 
     &__title {
@@ -183,7 +186,13 @@
       }
 
       &__wraper {
+        padding-bottom: 18px;
         width: 60.5%;
+      }
+
+      &__text {
+        font-family: $hkgrotesk-bold;
+        font-size: $desktop-card-titles;
       }
     }
   }

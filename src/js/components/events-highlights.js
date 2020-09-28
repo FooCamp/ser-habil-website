@@ -17,8 +17,8 @@ const buildMoreInfo = (arrayMoreinfo) => {
 };
 
 const eventsComponent = (data) => {
-  const titleDesktop = newText('h1', `Evento destacado: ${data.title}`, ['event__title-desktop']);
-  const title = newText('h3', `Evento destacado: ${data.title}`, ['event__title']);
+  const titleDesktop = newText('h1', `${data.evento} ${data.title}`, ['event__title-desktop']);
+  const title = newText('h3', `${data.evento} ${data.title}`, ['event__title']);
   const eventImage = newMultimedia('img', data.image, ['event__image']);
   const text = newText('p', data.text, ['event__text']);
   const moreInfo = buildMoreInfo(data.moreInfo);

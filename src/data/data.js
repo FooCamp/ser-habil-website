@@ -79,7 +79,7 @@ const pageData = {
       {
         component: 'events',
         title: 'Evento Destacado',
-        subtitle: ['Catalina López','Campeona nacional de natación'],
+        subtitle: ['Catalina López', 'Campeona nacional de natación'],
         url: 'events',
         text:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
@@ -190,6 +190,7 @@ const pageData = {
     sections: [
       {
         component: 'featuredEvent',
+        evento: 'Evento destacado:',
         title: 'Dia de campo',
         featured: true,
         image: {
@@ -222,25 +223,26 @@ const pageData = {
         events: [
           {
             component: 'event',
+            evento: 'Evento:',
             title: 'Yoga para el Alma',
             image: {
               src: 'event-5.png',
               alt: 'event image',
             },
             text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             moreInfo: [
               {
-                text: 'fecha',
+                text: 'Fecha',
                 description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Lugar',
+                description: 'Fundación Ser Hábil, sala 3',
               },
               {
                 text: 'Hora',
                 description: '3:30 p.m.',
-              },
-              {
-                text: 'place',
-                description: 'Fundación Ser Hábil, sala 3',
               },
             ],
             buttonInfo: {
@@ -250,25 +252,26 @@ const pageData = {
           },
           {
             component: 'event',
+            evento: 'Evento:',
             title: 'Curso de pintura con acuarelas',
             image: {
               src: 'event-2.png',
               alt: 'event image',
             },
             text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             moreInfo: [
               {
-                text: 'fecha',
+                text: 'Fecha',
                 description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Lugar',
+                description: 'Fundación Ser Hábil, sala 3',
               },
               {
                 text: 'Hora',
                 description: '3:30 p.m.',
-              },
-              {
-                text: 'place',
-                description: 'Fundación Ser Hábil, sala 3',
               },
             ],
             buttonInfo: {
@@ -278,14 +281,28 @@ const pageData = {
           },
           {
             component: 'event',
+            evento: 'Evento:',
             title: 'Dia en la Granja',
             image: {
               src: 'event-3.png',
               alt: 'event image',
             },
             text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-            moreInfo: [],
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            moreInfo: [
+              {
+                text: 'Fecha',
+                description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Lugar',
+                description: 'Fundación Ser Hábil, sala 3',
+              },
+              {
+                text: 'Hora',
+                description: '3:30 p.m.',
+              },
+            ],
             buttonInfo: {
               text: 'Registrarme',
               link: '',
@@ -293,17 +310,26 @@ const pageData = {
           },
           {
             component: 'event',
+            evento: 'Evento:',
             title: 'Curso de pintura con acuarelas',
             image: {
               src: 'event-4.jpg',
               alt: 'event image',
             },
             text:
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             moreInfo: [
               {
-                text: 'fecha',
+                text: 'Fecha',
                 description: 'Febrero, 12, 2020',
+              },
+              {
+                text: 'Lugar',
+                description: 'Fundación Ser Hábil, sala 3',
+              },
+              {
+                text: 'Hora',
+                description: '3:30 p.m.',
               },
             ],
             buttonInfo: {
@@ -321,7 +347,7 @@ const pageData = {
         component: 'hero',
         title: 'Acerca de la fundación',
         text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
         images: [
           {
             src: 'fundation-1.png',
