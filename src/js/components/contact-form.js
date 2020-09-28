@@ -54,7 +54,7 @@ const componentContactForm = (data) => {
     [title, paragraph, inputInformation, formButton],
     ['form', 'container'],
   );
-  formSection.id = 'scroll';
+
   return formSection;
 };
 
