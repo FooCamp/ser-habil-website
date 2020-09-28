@@ -89,4 +89,20 @@ const newMultimedia = (type, { src, alt }, classes = []) => {
   return container;
 };
 
-export { newContainer, newText, newLink, newMultimedia };
+/**
+ * @param {object} type el el tipo de variable que va recibir el input
+ * @param {object} placeholder es el contenido que guia al usuario para ingresar los datos correctamente en cada uno de los campos
+ * @param {array[string]} classes es un array de string de todas las clases
+ *  que se quieren insertar(este parametro es opcional)
+ *
+ * retorna un nodo input de entrada donde se le pasa como primer parametro el objeto que contiene el type y el placeholder,  la funcion los buscara automaticamente */
+
+ const newInput = ({type, placeholder}, classes = []) => {
+   const oneElement = createTagWithClasses('input',classes);
+   oneElement.type = type || '';
+   oneElement.placeholder = placeholder || '';
+
+   return oneElement;
+ };
+
+export { newContainer, newText, newLink, newMultimedia, newInput };

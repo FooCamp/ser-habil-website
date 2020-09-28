@@ -1,0 +1,137 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 450px;
+  padding: 49px 49px 230px;
+
+  &__title {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-title;
+    height: 54px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__paragraph {
+    color: $gray;
+    font-family: $hkgrotesk-regular;
+    font-size: $mobile-paragraph;
+    height: 64px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &__wrapers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  &__labels {
+    font-family: $hkgrotesk-bold;
+    font-size: $mobile-paragraph;
+    margin-bottom: 10px;
+  }
+
+  &__inputs {
+    border: none;
+    border-bottom: 1px solid $black;
+    display: block;
+    font-size: $mobile-paragraph;
+
+  }
+
+  &__button-text {
+    color: $white;
+    font-family: $hkgrotesk-bold;
+    font-size: $desktop-paragraph;
+  }
+  &__button {
+    background-color: #bebebe;
+    display: block;
+    height: 60px;
+    width: 100%;
+  }
+
+  &__error-msg {
+    color: $orange;
+    visibility: hidden;
+
+    &--visible {
+      visibility: visible;
+    }
+  }
+
+  @include viewport-desktop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+
+
+
+    &__title {
+      font-family: $hkgrotesk-bold;
+      font-size: $desktop-titles;
+      height: 68px;
+      margin-bottom: 40px;
+      width: 100%;
+    }
+
+    &__paragraph {
+      font-size: $desktop-paragraph;
+      line-height: 40px;
+    }
+
+    &__container {
+      flex-direction: row;
+      margin-top: 80px;
+      width: 85%;
+    }
+
+
+    &__labels {
+      font-size: $desktop-subtitles;
+      margin-bottom: 18px;
+    }
+
+    &__inputs {
+      height: 27px;
+      margin-right: 140px;
+      width: 54%;
+    }
+
+    &__button {
+      height: 60px;
+      margin-left: auto;
+      margin-right: 50px;
+      margin-top: -131px;
+      width: 8%;
+    }
+
+    &__error-msg {
+      color: $orange;
+      visibility: hidden;
+
+      &--visible {
+        visibility: visible;
+      }
+    }
+  }
+
+}
