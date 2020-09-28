@@ -85,7 +85,7 @@
 
   @include viewport-desktop() {
     max-width: 450px;
-    padding: 80px 30px 130px;
+    padding: 20px 30px 10px;
 
     &__title {
       font-size: $desktop-titles;

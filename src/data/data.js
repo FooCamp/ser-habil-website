@@ -128,35 +128,6 @@ const pageData = {
         text: 'Haz scroll para continuar',
       },
       {
-        component: 'contactForm',
-        title: 'Déjanos tus datos',
-        text:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
-        formFields: [
-          {
-            label: 'Nombre:',
-            type: 'text',
-            placeholder: 'Juan Carlos López',
-            message: 'Escribe tu nombre',
-          },
-          {
-            label: 'Teléfono:',
-            type: 'numbers',
-            placeholder: 'Ej: 300 123 4567',
-            message: 'Ingresa un número telefónico',
-          },
-          {
-            label: 'Correo electrónico:',
-            type: 'email',
-            placeholder: 'juancarlos',
-            message: 'Escribe tu correo corretamente. Mira un ejemplo: juan@gmail.com',
-          },
-        ],
-        buttonInfo: {
-          text: 'Enviar'
-        },
-      },
-      {
         component: 'contactUs',
         title: 'Ponte en contacto con nosotros',
         text:
@@ -182,6 +153,35 @@ const pageData = {
           src:
             'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2432.0906492940917!2d-75.59378303147989!3d6.255443893561203!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22c97971d770b4ef!2sAquatic%20Complex%20Atanasio%20Girardot!5e0!3m2!1sen!2sus!4v1599412191860!5m2!1sen!2sus',
           alt: 'ubicacion de la sede principal',
+        },
+      },
+      {
+        component: 'contactForm',
+        title: 'Déjanos tus datos',
+        text:
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        formFields: [
+          {
+            label: 'Nombre:',
+            type: 'text',
+            placeholder: 'Ej: Juan Carlos López',
+            message: 'Escribe tu nombre',
+          },
+          {
+            label: 'Teléfono:',
+            type: 'numbers',
+            placeholder: 'Ej: 300 123 4567',
+            message: 'Ingresa un número telefónico',
+          },
+          {
+            label: 'Correo electrónico:',
+            type: 'email',
+            placeholder: 'Ej: Juancarlos@gmail.com',
+            message: 'Escribe tu correo corretamente. Mira un ejemplo: juan@gmail.com',
+          },
+        ],
+        buttonInfo: {
+          text: 'Enviar',
         },
       },
     ],

@@ -47,16 +47,16 @@
       font-family: $hkgrotesk-bold;
       font-size: $desktop-titles;
       margin-bottom: 40px;
-      margin-left: 250px;
-      width: 630px;
+      margin-left: 18%;
+      width: 63.8%;
     }
 
     &__paragraph {
       font-family: $hkgrotesk-regular;
       font-size: $desktop-paragraph;
       margin-bottom: 80px;
-      margin-left: 300px;
-      width: 535px;
+      margin-left: 26%;
+      width: 47%;
     }
 
     &__label {
@@ -76,6 +76,10 @@
 
     &__information-texts {
       margin-bottom: 0;
+
+      &--2 {
+        padding-bottom: 0;
+      }
     }
   }
 }

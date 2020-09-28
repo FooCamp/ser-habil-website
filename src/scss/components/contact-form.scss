@@ -4,7 +4,7 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 450px;
-  padding: 49px 49px 230px;
+  padding: 49px 49px 100px;
 
   &__title {
     font-family: $hkgrotesk-bold;
@@ -53,7 +53,6 @@
     border-bottom: 1px solid $black;
     display: block;
     font-size: $mobile-paragraph;
-
   }
 
   &__button-text {
@@ -82,8 +81,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1440px;
-
-
+    padding: 49px 49px 170px;
 
     &__title {
       font-family: $hkgrotesk-bold;
@@ -96,6 +94,7 @@
     &__paragraph {
       font-size: $desktop-paragraph;
       line-height: 40px;
+      width: 55%;
     }
 
     &__container {
@@ -103,7 +102,6 @@
       margin-top: 80px;
       width: 85%;
     }
-
 
     &__labels {
       font-size: $desktop-subtitles;
@@ -119,7 +117,7 @@
     &__button {
       height: 60px;
       margin-left: auto;
-      margin-right: 50px;
+      margin-right: 3.7%;
       margin-top: -131px;
       width: 8%;
     }
@@ -133,5 +131,4 @@
       }
     }
   }
-
 }
