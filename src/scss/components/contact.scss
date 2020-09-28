@@ -76,6 +76,10 @@
 
     &__information-texts {
       margin-bottom: 0;
+
+      &--2 {
+        padding-bottom: 0;
+      }
     }
   }
 }
