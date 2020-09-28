@@ -164,7 +164,7 @@ const pageData = {
           {
             label: 'Nombre:',
             type: 'text',
-            placeholder: 'Juan Carlos López',
+            placeholder: 'Ej: Juan Carlos López',
             message: 'Escribe tu nombre',
           },
           {
@@ -176,7 +176,7 @@ const pageData = {
           {
             label: 'Correo electrónico:',
             type: 'email',
-            placeholder: 'juancarlos',
+            placeholder: 'Ej: Juancarlos@gmail.com',
             message: 'Escribe tu correo corretamente. Mira un ejemplo: juan@gmail.com',
           },
         ],
