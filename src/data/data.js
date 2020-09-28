@@ -219,7 +219,17 @@ const pageData = {
         },
       },
       {
+        component: 'scroll-indicator',
+        image: {
+          src: 'arrow-scroll.png',
+          alt: 'scroll page',
+        },
+        scrollTo: 'scroll',
+        text: 'Haz scroll para continuar',
+      },
+      {
         component: 'eventsList',
+        titleBig: 'Otros eventos del mes',
         events: [
           {
             component: 'event',
