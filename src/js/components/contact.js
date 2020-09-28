@@ -54,7 +54,7 @@ const componentContactUs = (data) => {
     [title, paragraph, informationList],
     ['contact', 'container'],
   );
-
+  section.id = 'scroll'
   return section;
 };
 
