@@ -9,6 +9,7 @@ import { eventsCarousel } from './components/events-carousel';
 import { footerComp } from './components/footer';
 import { createrMapComponen } from './components/ubication';
 import { pageData } from '../data/data';
+import { componentContactForm} from './components/contact-form';
 import { componentContactUs } from './components/contact';
 import { imageComponet } from './components/image-fundacion';
 import { eventsComponent } from './components/events-highlights';
@@ -20,6 +21,7 @@ import { eventsListComponent } from './components/events-list';
  * each component name is mapped to its template.
  */
 const components = {
+  contactForm: componentContactForm,
   default: defaultComp,
   navigation: navigationComponent,
   hero: componentIntro,

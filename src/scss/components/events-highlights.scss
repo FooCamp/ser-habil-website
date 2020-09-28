@@ -1,13 +1,7 @@
 .event {
   $root: &;
-  background-image: url('../static/assets/forma-eventos.png');
-  background-position: -3vw;
-  background-position-y: 45vw;
-  background-repeat: no-repeat;
-  background-size: auto 30%;
   margin: 0 auto 80px;
   max-width: 550px;
-
 
   &__wraper {
     display: flex;
@@ -46,7 +40,7 @@
     display: block;
     font-family: $hkgrotesk-bold;
     font-size: $mobile-card-titles;
-    margin: 10vw;
+    margin: 0 auto 20px;
     margin-bottom: 20px;
     width: 66vw;
 
@@ -115,38 +109,56 @@
 
   @include viewport-desktop() {
     & {
-      background-position: -1vw;
-      background-position-y: 21vw;
+      background-position: 3vw;
+      background-position-y: 30vw;
       background-size: auto 50%;
+      max-width: 1440px;
+      width: 100%;
+    }
+
+    &__organitation {
       display: flex;
       flex-direction: row;
+      margin: 0 auto;
       max-width: 1175px;
     }
 
-    &__feature {
+    &.event__feature {
+      background-image: url('../static/assets/forma-eventos.png');
+      background-position: 4vw;
+      background-position-y: 20vw;
+      background-repeat: no-repeat;
+      background-size: auto 56%;
+
       #{$root}__decoration {
-        background-image: url('../static/assets/forma-eventos2.png');
+        background-image: url('../static/assets/event_forma-desktop.png');
         background-position: right;
         background-repeat: no-repeat;
         background-size: auto;
-        bottom: -21.5%;
+        bottom: 26.5%;
         height: 31%;
+      }
+
+      #{$root}__title-desktop {
+        font-size: $desktop-titles;
+        width: 100%;
       }
     }
 
     &__title-desktop {
       display: block;
-      font-size: $desktop-titles;
+      font-family: $desktop-subtitles;
       margin: 3vw;
-      width: 600px;
+      width: 75%;
     }
 
     &__title {
-      display:none;
+      display: none;
     }
 
     &__text {
       font-size: $desktop-paragraph;
+      width: 96%;
     }
 
     &__wraper {
@@ -168,6 +180,10 @@
     .more-info {
       &__description {
         font-size: $desktop-paragraph;
+      }
+
+      &__wraper {
+        width: 60.5%;
       }
     }
   }
