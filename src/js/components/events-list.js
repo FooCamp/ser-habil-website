@@ -14,7 +14,7 @@ const eventsListComponent = (data) => {
         return event;
     });
     const titleBig = newText('h2', data.titleBig, ['event__title-big']);
-    const section = newContainer('section', [ titleBig, ...events], []);
+    const section = newContainer('section', [ titleBig, ...events], ['container', 'event']);
     section.id = 'scroll';
     return section;
 

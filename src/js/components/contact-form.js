@@ -13,7 +13,7 @@ const formInformation = (dataForm) => {
       const formInputs = inputInformation.querySelectorAll('.form__input');
       const errorInputs = inputInformation.querySelectorAll('.form__error-msg');
       if (input.value){
-        
+
       }
 
       });
@@ -54,7 +54,7 @@ const componentContactForm = (data) => {
     [title, paragraph, inputInformation, formButton],
     ['form', 'container'],
   );
-
+  formSection.id = 'scroll';
   return formSection;
 };
 

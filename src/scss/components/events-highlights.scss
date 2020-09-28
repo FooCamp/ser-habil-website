@@ -14,6 +14,7 @@
     }
   }
 
+
   &.event__feature {
     padding-bottom: 100px;
 
@@ -43,6 +44,15 @@
     margin: 0 auto 20px;
     margin-bottom: 20px;
     width: 66vw;
+
+    &-big {
+      font-family: $hkgrotesk-bold;
+      font-size: $mobile-title;
+      margin: 0 auto 20px;
+      margin-bottom: 20px;
+      text-align: center;
+      width: 49%;
+    }
 
     &-desktop {
       display: none;
@@ -154,6 +164,14 @@
 
     &__title {
       display: none;
+      &-big {
+        font-family: $hkgrotesk-bold;
+        font-size: $desktop-titles;
+        text-align: center;
+        margin: 0 auto 20px;
+        margin-bottom: 20px;
+        width: 49%;
+      }
     }
 
     &__text {
